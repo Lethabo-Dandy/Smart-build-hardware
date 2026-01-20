@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', 'Open Sans', sans-serif;  
+}
+
+header
+{
+    background-color: #f3dcdc2a;
+    background: url('../img/roof.jpeg') no-repeat center center;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+}
+
+.logo img 
+{
+    height: 130px;
+    width: 150px;
+}
