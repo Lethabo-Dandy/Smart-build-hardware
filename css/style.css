@@ -1,3 +1,10 @@
+:root
+{
+    --primary: #cc5d0d;
+    --secondary: #414443;
+    --white-text: #f7f5f2;
+}
+
 *
 {
     margin: 0;
@@ -6,17 +13,120 @@
     font-family: 'Times New Roman', 'Open Sans', sans-serif;  
 }
 
-header
+header::before 
 {
-    background-color: #f3dcdc2a;
+    content: "";
+    position: absolute;
+    inset: 0;
     background: url('../img/roof.jpeg') no-repeat center center;
     background-size: cover;
-    min-height: 650px;
+    filter: blur(3px);
+    transform: scale(1.1); 
+    z-index: 1;
+}
+
+header > * 
+{
     position: relative;
+    z-index: 2;
+}
+
+
+a
+{
+    color: var(--secondary);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
 }
 
 .logo img 
 {
-    height: 130px;
-    width: 150px;
+    margin: 0;
+    padding: 0;
+    height: 16rem;
+    width: 20rem;
+}
+
+.navbar
+{
+    background: rgba(226, 225, 225, 0.411);
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links 
+{
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: right;
+    padding-right: 5rem;
+    gap: 3.5rem;
+}
+
+.links ul
+{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.btn-quote 
+{
+    border: none;
+    color: var(--white-text);
+    font-size: 1rem;
+    background-color: var(--primary);
+    height: 2.6rem;
+    width: 8.4rem;
+    letter-spacing: .1rem;
+}
+
+.showcase 
+{
+    color: var(--white-text);
+    text-align: center;
+    margin: 13%;
+}
+
+.showcase h1
+{
+    font-size: 6rem;
+    text-shadow: 2px 2px #41524c;
+}
+
+.showcase h6
+{
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #41524c;
+}
+
+.highlight
+{
+    color: var(--primary);
+}
+
+.btn 
+{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.btn button
+{
+    border: none;
+    color: var(--white-text);
+    background-color: var(--primary);
+    font-size: 1rem;
+    height: 2.6rem;
+    width: 9.4rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
 }
