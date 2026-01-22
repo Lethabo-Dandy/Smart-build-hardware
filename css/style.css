@@ -93,9 +93,16 @@ ul
     font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
+.links a:hover 
+{
+    font-size: clamp(1rem, 1.6vw, 1.3rem);
+    transition: all 0.3s ease;
+}
+
 .btn-quote 
 {
     border: none;
+    border-radius: 15px;
     color: var(--white-text);
     font-size: 1rem;
     background-color: var(--primary);
@@ -142,13 +149,21 @@ ul
 .btn button
 {
     border: none;
+    border-radius: 15px;
     color: var(--white-text);
     background-color: var(--primary);
     font-size: 1rem;
     height: 2.6rem;
-    width: 9.4rem;
+    width: 9.8rem;
     letter-spacing: .1rem;
     margin-top: 10px;
+    padding: 5px;
+}
+
+header button:hover 
+{
+    background-color: var(--secondary);
+    transition: all 0.3s ease;
 }
 
 /*  Services */
