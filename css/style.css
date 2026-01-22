@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', 'Open Sans', sans-serif;  
+    font-family: sans-serif, 'Times New Roman', 'Open Sans';  
 }
 
 header 
@@ -149,4 +149,79 @@ ul
     width: 9.4rem;
     letter-spacing: .1rem;
     margin-top: 10px;
+}
+
+/*  Services */
+.service-list 
+{
+    color: var(--white-text);
+    background-color: var(--white-text);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.service-card 
+{
+    background: var(--secondary);
+    border-bottom: 2px solid var(--primary);
+    height: 24rem;
+    width: 20rem;
+    padding: 1.5rem;
+    margin-bottom: 6rem;
+    margin-top: -4rem;
+    z-index: 1;
+}
+
+.service-card:hover
+{
+    background-color: var(--primary);
+    color: var(--white-text);
+}
+
+.service-card:hover 
+{
+    background-color: var(--primary);
+    color: var(--white-text);
+    border-bottom: 3px solid var(--secondary);
+}
+
+.service-card,
+.service-card .icon,
+.service-card h6,
+.service-card p 
+{
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .icon,
+.service-card:hover h6
+{
+    color: var(--secondary);
+}
+
+.service-card .icon, .service-card h6, .service-card p
+{
+    padding-bottom: 1.2rem;
+}
+
+.service-card .icon, .service-card h6 
+{
+    color: var(--primary);
+}
+
+.service-card .icon
+{
+    font-size: 3.5rem;
+}
+
+.service-card h6
+{
+    font-size: 1.5rem;
+}
+
+.service-card p
+{
+    font-size: 1.1rem;
 }
