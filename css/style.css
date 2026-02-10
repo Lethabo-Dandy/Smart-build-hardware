@@ -149,7 +149,8 @@ button
 .btn 
 {
     display: inline-flex;
-    gap: 10px;
+    gap: 2rem;
+    padding-top: 2rem;
 }
 
 .btn button
@@ -246,4 +247,24 @@ header button:hover
 .service-card p
 {
     font-size: 1.1rem;
+}
+
+/*      PRODUCTS        */
+.product
+{
+    font-size: 20px;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.products
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.items img
+{
+    max-width: 400px;
 }
