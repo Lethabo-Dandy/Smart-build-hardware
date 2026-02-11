@@ -252,19 +252,62 @@ header button:hover
 /*      PRODUCTS        */
 .product
 {
-    font-size: 20px;
-    padding-top: 2rem;
+    font-size: 25px;
+    padding-top: 5rem;
     text-align: center;
+}
+
+.product h1
+{
+    color: var(--secondary);
 }
 
 .products
 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    justify-content: center;
+    margin: 0 10rem;
+    gap: 2rem;
+    padding-top: 5rem;
 }
 
 .items img
 {
-    max-width: 400px;
+    max-width: 300px;
+    margin-bottom: .5rem;
+}
+
+.items
+{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(224, 223, 223);
+    text-align: center;
+    padding: 1rem;
+}
+
+.items p
+{
+    margin-bottom: 1rem;
+}
+
+.item-name 
+{
+    color: var(--secondary);
+}
+
+.price 
+{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.btn-cart 
+{
+    border: none;
+    padding: 0.5rem;
+    width: 80%;
+    color: var(--white-text);
+    background-color: var(--primary);
+    border-radius: 5px;
 }
