@@ -284,6 +284,13 @@ header button:hover
     box-shadow: 0 0 10px rgb(224, 223, 223);
     text-align: center;
     padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.items:hover
+{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgb(61, 61, 61);
 }
 
 .items p
@@ -310,4 +317,17 @@ header button:hover
     color: var(--white-text);
     background-color: var(--primary);
     border-radius: 5px;
+}
+
+.btn-cart:hover
+{
+    border: 1px solid var(--primary);
+    background-color: var(--white-text);
+    color: black;
+}
+
+.btn-cart i
+{
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
 }
