@@ -398,6 +398,7 @@ header button:hover
 {
     color: var(--white-text);
     background-color: var(--primary);
+    border: 5px solid var(--secondary);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 2rem;
