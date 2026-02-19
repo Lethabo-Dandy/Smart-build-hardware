@@ -311,16 +311,74 @@ header button:hover
 }
 
 /*      PRODUCTS        */
-.product
+
+/* Make product section positioning context */
+.product 
 {
+    position: relative;
     font-size: 25px;
-    padding-top: 5rem;
     text-align: center;
+}
+
+/* Sticky announcement */
+.announcement-bar 
+{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--secondary);
+    overflow: hidden;
+    padding: 0.7rem 0;
+}
+
+/* Moving track */
+.announcement-track 
+{
+    display: flex;
+    gap: 3rem; /* equal spacing */
+    width: max-content;
+    animation: scrollLeft 15s linear infinite;
+}
+
+/* Pause on hover */
+.announcement-bar:hover .announcement-track 
+{
+    animation-play-state: paused;
+}
+
+/* Text style */
+.announcement-track span 
+{
+    color: goldenrod;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: blink 1.2s ease-in-out infinite;
+}
+
+/* Continuous left scroll (no reverse) */
+@keyframes scrollLeft 
+{
+    from 
+    {
+        transform: translateX(0);
+    }
+    to 
+    {
+        transform: translateX(-50%);
+    }
+}
+
+/* Blink while moving */
+@keyframes blink 
+{
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }
 
 .product h1
 {
     color: var(--secondary);
+    padding-top: 5rem;
 }
 
 .products
@@ -429,9 +487,16 @@ header button:hover
     padding-bottom: 1rem;
 }
 
-.quick-links li:hover
+.quick-links li a:hover
 {
     cursor: pointer;
+    transition: transform 0.3 ease;
+}
+
+.quick-links a:hover
+{
+    color: var(--secondary);
+    transform: scale(1.1);
 }
 
 .link-icon ul 
@@ -448,7 +513,6 @@ header button:hover
     display: flex;
     align-items: center;
 }
-
 
 /*  footer  */
 footer 
