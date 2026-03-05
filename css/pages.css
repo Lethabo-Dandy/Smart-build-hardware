@@ -13,33 +13,6 @@
     font-family: sans-serif, 'Times New Roman', 'Open Sans';  
 }
 
-header 
-{
-    position: relative;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-header::before 
-{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('../img/roof.jpeg') center / cover no-repeat;
-    background-size: cover;
-    filter: blur(3px);
-    transform: scale(1.1);
-    pointer-events: none;
-    z-index: 1;
-}
-
-header > * 
-{
-    position: relative;
-    z-index: 2;
-}
-
-
 a
 {
     color: var(--secondary);
@@ -63,7 +36,7 @@ ul
 
 .navbar
 {
-    background: rgba(226, 225, 225, 0.411);
+    background: rgb(245, 241, 241);
     width: 100%;
     min-height: 5rem;
     display: flex;
@@ -181,144 +154,6 @@ ul
     letter-spacing: .1rem;
 }
 
-/*  showcase    */
-.showcase 
-{
-    min-height: calc(100vh - 8rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    color: var(--white-text);
-}
-
-.showcase h1
-{
-    font-size: clamp(2.5rem, 6vw, 6rem);
-    text-shadow: 2px 2px #41524c;
-}
-
-.showcase p
-{
-    font-size: 1.4rem;
-    text-shadow: 2px 2px #0d0d0d;
-}
-
-.highlight
-{
-    color: var(--primary);
-}
-
-button 
-{
-    cursor: pointer;
-}
-
-.btn 
-{
-    display: inline-flex;
-    gap: 2rem;
-    padding-top: 2rem;
-}
-
-.btn button
-{
-    border: none;
-    border-radius: 15px;
-    color: var(--white-text);
-    background-color: var(--primary);
-    font-size: 1rem;
-    height: 2.6rem;
-    width: 9.8rem;
-    letter-spacing: .1rem;
-    margin-top: 10px;
-    padding: 5px;
-}
-
-header button:hover 
-{
-    background-color: var(--secondary);
-    transition: all 0.3s ease;
-}
-
-/*  Services */
-.service-list 
-{
-    color: var(--white-text);
-    background-color: var(--white-text);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;
-}
-
-.service-card 
-{
-    background: var(--secondary);
-    border-bottom: 2px solid var(--primary);
-    height: 24rem;
-    width: 20rem;
-    padding: 1.5rem;
-    margin-bottom: 6rem;
-    margin-top: -4rem;
-    position: relative;
-    z-index: 2;
-}
-
-.service-card:hover
-{
-    background-color: var(--primary);
-    color: var(--white-text);
-}
-
-.service-card:hover 
-{
-    background-color: var(--primary);
-    color: var(--white-text);
-    border-bottom: 3px solid var(--secondary);
-}
-
-.service-card,
-.service-card .icon,
-.service-card h6,
-.service-card p 
-{
-    transition: all 0.3s ease;
-}
-
-.service-card:hover .icon,
-.service-card:hover h6
-{
-    color: var(--secondary);
-}
-
-.service-card .icon, .service-card h6, .service-card p
-{
-    padding-bottom: 1.2rem;
-}
-
-.service-card .icon, .service-card h6 
-{
-    color: var(--primary);
-}
-
-.service-card .icon
-{
-    font-size: 3.5rem;
-}
-
-.service-card h6
-{
-    font-size: 1.5rem;
-}
-
-.service-card p
-{
-    font-size: 1.1rem;
-}
-
 /*      PRODUCTS        */
 
 /* Make product section positioning context */
@@ -390,25 +225,6 @@ header button:hover
     padding-top: 5rem;
 }
 
-.btn-shop
-{
-    border: none;
-    border-radius: 15px;
-    color: var(--white-text);
-    font-size: 1rem;
-    background-color: var(--primary);
-    height: 2.6rem;
-    width: 8.4rem;
-    letter-spacing: .1rem;
-    margin-top: 5rem;
-}
-
-.btn-shop:hover 
-{
-    background-color: var(--secondary);
-    transition: all 0.3s ease;
-}
-
 .products
 {
     display: grid;
@@ -416,7 +232,7 @@ header button:hover
     justify-content: center;
     margin: 0 10rem;
     gap: 2rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .items img
