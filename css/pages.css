@@ -162,6 +162,7 @@ ul
     position: relative;
     font-size: 25px;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* Sticky announcement */
@@ -331,7 +332,6 @@ ul
     background-color: var(--secondary);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 2rem;
     padding: 2rem 5rem 2rem 5rem;
 }
 
@@ -390,10 +390,11 @@ ul
 .contact 
 {
     display: flex;
-    max-width: 600px;
+    align-items: center;
+    gap: 5rem;
+    max-width: 1000px;
     margin: auto;
     padding: 40px;
-    font-family: Arial, sans-serif;
 }
 
 .contact h2 
@@ -445,10 +446,47 @@ ul
     background-color: var(--secondary);
 }
 
+.contact-us
+{
+    display: block;
+    justify-items: left;
+    border-left: 2px solid var(--primary);
+    padding-left: 2rem;
+}
+
+.contact-us .links-head
+{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.contact-us .p, .contact-us li
+{
+    padding-bottom: 0.8rem;
+}
+
+.contact li a:hover
+{
+    cursor: pointer;
+    transition: transform 0.3 ease;
+}
+
+.contact a:hover
+{
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
 /* map  */
 .map
 {
+    background-color: rgba(175, 172, 124, 0.171);
     text-align: center;
+}
+
+.map h2 
+{
+    padding: 2rem 0;
 }
 
 /*  footer  */
