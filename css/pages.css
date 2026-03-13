@@ -13,6 +13,11 @@
     font-family: sans-serif, 'Times New Roman', 'Open Sans';  
 }
 
+.highlight 
+{
+    color: var(--primary);
+}
+
 a
 {
     color: var(--secondary);
@@ -299,7 +304,7 @@ ul
 /*  about   */
 .about 
 {
-    background-color: #e9ebea;
+    background-color: rgb(255, 255, 255);
 }
 
 .about h1 
@@ -310,19 +315,64 @@ ul
 
 .about-details 
 {
-    padding: 2.5rem 15rem 0 15rem;
+    font-size: 1.5rem;
+}
+
+.p1
+{
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .about-details img
 {
-    width: 20rem;
+    width: 40rem;
 }
 
-.about-details div
+.p2
 {
     display: flex;
-    gap: 2.5rem;
+    background-color: var(--white-text);
+    padding: 5rem 10rem 5rem 10rem;
+}
 
+.p
+{
+    display: inline-block;
+    padding-left: 5rem;
+}
+
+.p3 
+{
+    background: url('../img/background1.jpg') center / cover no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.why
+{
+    color: var(--white-text);
+    padding: 5rem 5rem 1rem 2rem;
+    display: flex;
+}
+
+.why p, .why h5
+{
+    padding-left: 10rem;
+}
+
+.p4 
+{
+    background: url('../img/white-background.jpg') center / cover no-repeat;
+    background-size: cover;
+    display: block;
+    text-align: center;
+}
+
+.p4 p 
+{
+    padding: 2rem 5rem 1rem 5rem;
 }
 
 /*  links   */
