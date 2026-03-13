@@ -320,6 +320,8 @@ ul
 
 .p1
 {
+    background: url('../img/white-background1.jpg') center / cover no-repeat;
+    background-size: cover;
     text-align: center;
     justify-content: center;
     padding: 2rem 0;
