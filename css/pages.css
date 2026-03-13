@@ -553,3 +553,98 @@ footer
 }
 
 @media (max-width: 1440px)
+{
+    .navbar
+    {
+        height: 0;
+    }
+
+    .links a
+    {
+        font-size: 1.1rem;
+    }
+
+    .search-box input 
+    {
+        width: 180px;
+    }
+
+    /*      PRODUCTS        */
+    /* Make product section positioning context */
+    .product 
+    {
+        font-size: 20px;
+    }
+
+    /* Sticky announcement */
+    .announcement-bar 
+    {
+        padding: 0.7rem 0;
+    }
+
+    .product h1
+    {
+        padding-top: 2rem;
+    }
+
+    .btn-shop
+    {
+        height: 2.2rem;
+        width: 7rem;
+        margin-top: 2rem;
+    }
+
+    .products
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+        margin: 0 10rem;
+    }
+
+    .items img
+    {
+        max-width: 250px;
+    }
+
+    .items p
+    {
+        margin-bottom: 1rem;
+    }
+
+    .price 
+    {
+        padding-bottom: 1rem;
+    }
+
+    /*  links   */
+    .quick-links
+    {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+    .quick-links h4 
+    {
+        font-size: 1.2rem;
+    }
+
+    .address h6
+    {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .quick-links p, .quick-links li
+    {
+        font-size: .9rem;
+        padding-bottom: .4rem;
+    }
+
+    .link-icon ul 
+    {
+        gap: 1rem; 
+    }
+
+    .link-icon li 
+    {
+        font-size: 1.1rem;
+    }
+}
