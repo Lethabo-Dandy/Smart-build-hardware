@@ -551,3 +551,146 @@ footer
     text-align: center;
     padding-top: 1rem;
 }
+
+@media (max-width: 1440px)
+{
+    .navbar
+    {
+        height: 0;
+    }
+
+    .links a
+    {
+        font-size: 1.1rem;
+    }
+
+    .search-box input 
+    {
+        width: 180px;
+    }
+
+    .service-card 
+    {
+        height: 20rem;
+        width: 16rem;        
+        margin-bottom: 3rem;
+    }
+
+    .service-card .icon
+    {
+        font-size: 3rem;
+    }
+
+    .service-card h6
+    {
+        font-size: 1.2rem;
+    }
+
+    .service-card p
+    {
+        font-size: 1rem;
+    }
+
+    /*      PRODUCTS        */
+    /* Make product section positioning context */
+    .product 
+    {
+        font-size: 20px;
+    }
+
+    /* Sticky announcement */
+    .announcement-bar 
+    {
+        padding: 0.7rem 0;
+    }
+
+    .product h1
+    {
+        padding-top: 2rem;
+    }
+
+    .btn-shop
+    {
+        height: 2.2rem;
+        width: 7rem;
+        margin-top: 2rem;
+    }
+
+    .products
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+        margin: 0 10rem;
+    }
+
+    .items img
+    {
+        max-width: 250px;
+    }
+
+    .items p
+    {
+        margin-bottom: 1rem;
+    }
+
+    .price 
+    {
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+
+    .btn-cart 
+    {
+        border: none;
+        padding: 0.5rem;
+        width: 80%;
+        color: var(--white-text);
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+
+    .btn-cart:hover
+    {
+        border: 1px solid var(--primary);
+        background-color: var(--white-text);
+        color: black;
+    }
+
+    .btn-cart i
+    {
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /*  links   */
+    .quick-links
+    {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+    .quick-links h4 
+    {
+        font-size: 1.2rem;
+    }
+
+    .address h6
+    {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .quick-links p, .quick-links li
+    {
+        font-size: .9rem;
+        padding-bottom: .4rem;
+    }
+
+    .link-icon ul 
+    {
+        gap: 1rem; 
+    }
+
+    .link-icon li 
+    {
+        font-size: 1.1rem;
+    }
+}
