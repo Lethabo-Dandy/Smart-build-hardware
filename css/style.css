@@ -677,7 +677,8 @@ footer
 @media (max-width: 1024px) {
 
     /* Navbar */
-    .mid-links ul {
+    .mid-links ul 
+    {
         gap: 1rem;
     }
 
@@ -691,7 +692,8 @@ footer
     }
 
     /* Products */
-    .products {
+    .products 
+    {
         margin: 0 2rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
@@ -702,7 +704,6 @@ footer
         gap: 2rem;
     }
 }
-
 
 /* =========================
    MOBILE (≤ 768px)
