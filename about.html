@@ -1,184 +1,160 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous"/>
-
         <title>Smart Build</title>
         <link rel="stylesheet" href="/css/pages.css">
     </head>
 
     <body>
-        <header>
-            <!--    navigation bar  -->
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./img/logo.png">
-                    </a>
-                </div>
 
-                <div class="links">
-                    <div class="mid-links">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Products</a></li>
-                            <li class="current"><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+        <!-- ===== NAVBAR ===== -->
+        <nav class="navbar">
+            <input type="checkbox" id="nav-toggle">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo.png">
+                </a>
+            </div>
+
+            <label for="nav-toggle" class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <div class="nav-menu">
+                <ul class="mid-links-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products...">
+                        <button type="submit"><i class="bi bi-search"></i></button>
                     </div>
-                    
-                    <div class="left-links">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search products...">
-                            <button type="submit">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </div>
-
-                        <ul class="icon-links">
-                            <li><a href="wishlist.html"><i class="bi bi-heart-fill"></a></i></li>
-                            <li><a href="cart.html"><i class="bi bi-cart4"></i></a></li>
-                            <li><a href="account"><i class="bi bi-person-circle"></i></a></li>
-                        </ul>
-                    </div>
+                    <ul class="icon-links">
+                        <li><a href="wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
+                        <li><a href="cart.html"><i class="bi bi-cart4"></i></a></li>
+                        <li><a href="account"><i class="bi bi-person-circle"></i></a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
 
+        <!-- ===== ABOUT ===== -->
         <section class="about">
-                <div class="about-details">
-                    <div class="p3">
-                        <h1>About us</h1>
-
-                        <div class="why">
-                            <div>
-                                <img src="./img/architect.png">
-                            </div>
-                            
-                            <div>        
-                                <p>
-                                    At <span class="dark">Smart Build Hardware,</span> we believe that every strong structure begins with the right materials. <br> 
-                                    Our mission is to provide builders, contractors, and homeowners <br> 
-                                    with reliable building supplies, quality tools, and excellent customer service. <br>
-                                    <span class="dark">Smart Build Hardware </span> is established to support both professionals and everyday customers <br>
-                                    with affordable products and practical solutions for construction, renovation, and maintenance projects. <br>
-                                    Whether you are building a new home, repairing a roof, installing plumbing, or working on a DIY project,<br>
-                                    we aim to make sure you have everything you need in one place.
-                                    <br>
-                                    <br>
-                                </p>
-
-                                <h3>What sets us apart:</h3>
-                                <br>
-
-                                <p>    
-                                    Reliable Supply: <br>
-                                    We maintain a consistent supply of essential building materials to keep your projects moving without delays.
-                                    <br><br>
-                                    Competitive Pricing:<br>
-                                    Our pricing is designed to give customers the best possible value without sacrificing quality.
-                                    <br> <br>
-                                    Customer-Focused Service:<br>
-                                    Our team is committed to helping you find the right materials and solutions for your project.
-                                    <br> <br>
-                                    Trusted by Builders:<br>
-                                    Smart Build Hardware is dedicated to becoming a reliable partner for construction projects of all sizes.                                
-                                </p>
-                            </div>
+            <div class="about-details">
+                <div class="p3">
+                    <h1>About us</h1>
+                    <div class="why">
+                        <div>
+                            <img src="./img/architect.png">
                         </div>
-                    </div>
-                        
-                    <div class="p2">
-                        <div class="p">
-                            <div>
-                                <p>
-                                    We stock a wide range of products including <br>
-                                    building materials, hardware tools, paint, and general construction equipment.<br>
-                                    Our team is committed to helping customers find the right products quickly and offering helpful advice when needed. <br>
-                                </p>
-                            </div>
-
-                            <div>
-                                <p>
-                                    At <span class="highlight">Smart Build Hardware,</span> we focus on <span class="highlight">3</span> key values<span class="highlight">:</span> <br> <br>
-                                    <ol>
-                                        <li>Quality Products - Supplying reliable materials you can trust.</li>
-                                        <li>Affordable Prices - Competitive pricing for both contractors and homeowners.</li>
-                                        <li>Customer Support - Friendly service and practical advice for your projects.</li>
-                                    </ol>
-                                    
-                                    <br>
-                                    <h5>Our goal is to become a trusted partner in the community by helping customers build smarter, stronger, and better.</h5>
-                                    <br> <br>
-                                    <h2><span class="highlight">Smart Build Hardware</span> — <span class="highlight">B</span>uilding <span class="highlight">t</span>he <span class="highlight">F</span>uture <span class="highlight">T</span>ogether.</h2>
-                                </p>
-                            </div>
-                        </div>
-
-                        <img src="./img/2.jpg">
-                    </div>
-
-                    <div class="p4">
-                        <h1>Products / What We Supply</h1>
-
-                        <p>
-                            Smart Build Hardware supplies a wide range of building materials and hardware products designed<br>
-                            to support construction, renovation, and maintenance projects. <br>
+                        <div>
+                            <p>
+                                At <span class="dark">Smart Build Hardware,</span> we believe that every strong structure begins with the right materials. <br>
+                                Our mission is to provide builders, contractors, and homeowners <br>
+                                with reliable building supplies, quality tools, and excellent customer service. <br>
+                                <span class="dark">Smart Build Hardware </span> is established to support both professionals and everyday customers <br>
+                                with affordable products and practical solutions for construction, renovation, and maintenance projects. <br>
+                                Whether you are building a new home, repairing a roof, installing plumbing, or working on a DIY project,<br>
+                                we aim to make sure you have everything you need in one place.
+                                <br><br>
+                            </p>
+                            <h3>What sets us apart:</h3>
                             <br>
-                           
-                            
-                                At Smart Build Hardware, we ensure every product we supply 
-                                meets the standards required for reliable construction and long-lasting results.    
-                                <br>
-                                <br>
-                                <span class="bold">Build Smarter With Smart Build Planning a construction project or need reliable building materials?</span>
-                                <br>
-                                Let Smart Build Hardware help you get the job done with quality supplies, competitive prices, and dependable service you can trust.<br>
-                                Whether you're a contractor managing a large worksite<br>
-                                or<br> 
-                                a homeowner working on improvements,<br> 
-                                we're here to support your project from start to finish.<br>
-
-                            <br> <br> <br>
-                            <a href="contact.html"><span class="highlight">Get in touch with us today or visit our store to find the right materials for your next build.</a></span>
-                        </p>
+                            <p>
+                                Reliable Supply: <br>
+                                We maintain a consistent supply of essential building materials to keep your projects moving without delays.
+                                <br><br>
+                                Competitive Pricing:<br>
+                                Our pricing is designed to give customers the best possible value without sacrificing quality.
+                                <br><br>
+                                Customer-Focused Service:<br>
+                                Our team is committed to helping you find the right materials and solutions for your project.
+                                <br><br>
+                                Trusted by Builders:<br>
+                                Smart Build Hardware is dedicated to becoming a reliable partner for construction projects of all sizes.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="quick-links">
-            <div class="contact-link">
-                <div class="links-head">
-                    <h4>Contact details</h4>
+                <div class="p2">
+                    <div class="p">
+                        <div>
+                            <p>
+                                We stock a wide range of products including <br>
+                                building materials, hardware tools, paint, and general construction equipment.<br>
+                                Our team is committed to helping customers find the right products quickly and offering helpful advice when needed. <br>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                At <span class="highlight">Smart Build Hardware,</span> we focus on <span class="highlight">3</span> key values<span class="highlight">:</span> <br><br>
+                                <ol>
+                                    <li>Quality Products - Supplying reliable materials you can trust.</li>
+                                    <li>Affordable Prices - Competitive pricing for both contractors and homeowners.</li>
+                                    <li>Customer Support - Friendly service and practical advice for your projects.</li>
+                                </ol>
+                                <br>
+                                <h5>Our goal is to become a trusted partner in the community by helping customers build smarter, stronger, and better.</h5>
+                                <br><br>
+                                <h2><span class="highlight">Smart Build Hardware</span> — <span class="highlight">B</span>uilding <span class="highlight">t</span>he <span class="highlight">F</span>uture <span class="highlight">T</span>ogether.</h2>
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./img/2.jpg">
                 </div>
-                
-                <div class="address">
-                    <h6 class="links-head">Address</h6>
-                    
-                    <p>Isibaya Street 1515 <br> <br>
-                        Soshanguve <br> <br>
-                        0152 <br> <br>
-                        Pretoria
+
+                <div class="p4">
+                    <h1>Products / What We Supply</h1>
+                    <p>
+                        Smart Build Hardware supplies a wide range of building materials and hardware products designed<br>
+                        to support construction, renovation, and maintenance projects. <br>
+                        <br>
+                        At Smart Build Hardware, we ensure every product we supply
+                        meets the standards required for reliable construction and long-lasting results.
+                        <br><br>
+                        <span class="bold">Build Smarter With Smart Build Planning a construction project or need reliable building materials?</span>
+                        <br>
+                        Let Smart Build Hardware help you get the job done with quality supplies, competitive prices, and dependable service you can trust.<br>
+                        Whether you're a contractor managing a large worksite<br>
+                        or<br>
+                        a homeowner working on improvements,<br>
+                        we're here to support your project from start to finish.<br>
+                        <br><br><br>
+                        <a href="contact.html"><span class="highlight">Get in touch with us today or visit our store to find the right materials for your next build.</span></a>
                     </p>
                 </div>
-                
+            </div>
+        </section>
+
+        <!-- ===== QUICK LINKS ===== -->
+        <section class="quick-links">
+            <div class="contact-link">
+                <div class="links-head"><h4>Contact details</h4></div>
+                <div class="address">
+                    <h6 class="links-head">Address</h6>
+                    <p>Isibaya Street 1515 <br><br>Soshanguve <br><br>0152 <br><br>Pretoria</p>
+                </div>
             </div>
 
             <div class="shop-now">
-                <div class="links-head">
-                    <h4>Shop now</h4>
-                </div>
-                
+                <div class="links-head"><h4>Shop now</h4></div>
                 <ul>
                     <li><a href="">Roof tiles</a></li>
                     <li><a href="">Ridge corner</a></li>
                     <li><a href="">Ridges</a></li>
                     <li><a href="">Roof sheet</a></li>
-                    <li><a href="">Builing Column</a></li>
+                    <li><a href="">Building Column</a></li>
                     <li><a href="">Lintel concrete</a></li>
                     <li><a href="">Steel nail</a></li>
                     <li><a href="">Oxide cement powder</a></li>
@@ -186,10 +162,7 @@
             </div>
 
             <div class="quick-help">
-                <div class="links-head">
-                    <h4>Quick help</h4>
-                </div>
-
+                <div class="links-head"><h4>Quick help</h4></div>
                 <ul>
                     <li><a href="">Services</a></li>
                     <li><a href="">Quotation</a></li>
@@ -199,30 +172,23 @@
             </div>
 
             <div class="social">
-                <div class="links-head">
-                    <h4>Email & Social</h4>
-                </div>
-                
+                <div class="links-head"><h4>Email & Social</h4></div>
                 <ul>
-                    <li><a href="tel:+27798286421"><i class="bi bi-telephone"></a></i> 079 828 6421</li>
-                    <li><a href=""><i class="bi bi-envelope-at"></a></i> hr@smartbuild.co.za</li>
-                </ul>      
-
+                    <li><a href="tel:+27798286421"><i class="bi bi-telephone"></i></a> 079 828 6421</li>
+                    <li><a href=""><i class="bi bi-envelope-at"></i></a> hr@smartbuild.co.za</li>
+                </ul>
                 <div class="link-icon">
                     <ul>
-                        <li><a href=""><i class="bi bi-whatsapp"></a></i></li>
-                        <li><a href=""><i class="bi bi-instagram"></a></i></li>
-                        <li><a href=""><i class="bi bi-facebook"></a></i></li>  
-                        <li><a href=""><i class="bi bi-tiktok"></i></a></li>                      
+                        <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                        <li><a href=""><i class="bi bi-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="Opening-times">
-                <div class="links-head">
-                    <h4>Opening Times</h4>
-                </div>
-
+                <div class="links-head"><h4>Opening Times</h4></div>
                 <div>
                     <p>Mon - Fri: 08:00 - 17:00</p>
                     <p>Sat & Sun: 08:00 - 14:00</p>
@@ -234,5 +200,6 @@
         <footer>
             <p><i class="fa-solid fa-copyright"></i>2026 Copyright, Smart Build</p>
         </footer>
+
     </body>
 </html>
