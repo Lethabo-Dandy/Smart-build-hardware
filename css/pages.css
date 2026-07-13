@@ -113,6 +113,27 @@ button {
     border-radius: 20px;
     overflow: hidden;
     background: white;
+    position: relative;
+}
+
+#suggestions{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#fff;
+    border:1px solid #ccc;
+    display:none;
+    z-index:1000;
+}
+
+#suggestions div{
+    padding:10px;
+    cursor:pointer;
+}
+
+#suggestions div:hover{
+    background:#f2f2f2;
 }
 
 .search-box input {
@@ -133,6 +154,15 @@ button {
 
 .search-box button:hover {
     background: var(--secondary);
+}
+
+#noResults{
+    display:none;
+    font-size:1.5rem;
+    color:var(--primary);
+    text-align:center;
+    margin:40px 0;
+    font-weight:bold;
 }
 
 .icon-links {

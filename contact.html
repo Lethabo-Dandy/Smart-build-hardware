@@ -36,9 +36,19 @@
 
                 <div class="nav-right">
                     <div class="search-box">
-                        <input type="text" placeholder="Search products...">
-                        <button type="submit"><i class="bi bi-search"></i></button>
+                        <input 
+                            type="text"
+                            id="searchInput" 
+                            placeholder="Search products..."
+                            autocomplete="off">
+
+                        <button id="searchBtn" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                        <div id="suggestions"></div>
                     </div>
+
                     <ul class="icon-links">
                         <li><a href="wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
                         <li><a href="cart.html"><i class="bi bi-cart4"></i></a></li>
@@ -200,5 +210,6 @@
             <p><i class="fa-solid fa-copyright"></i>2026 Copyright, Smart Build</p>
         </footer>
 
+        <script src="./script/nav.js"></script>
     </body>
 </html>

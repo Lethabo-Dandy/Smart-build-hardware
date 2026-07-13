@@ -36,9 +36,19 @@
 
                 <div class="nav-right">
                     <div class="search-box">
-                        <input type="text" placeholder="Search products...">
-                        <button type="submit"><i class="bi bi-search"></i></button>
+                        <input 
+                            type="text"
+                            id="searchInput" 
+                            placeholder="Search products..."
+                            autocomplete="off">
+
+                        <button id="searchBtn" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                        <div id="suggestions"></div>
                     </div>
+
                     <ul class="icon-links">
                         <li><a href="wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
                         <li><a href="cart.html"><i class="bi bi-cart4"></i></a></li>
@@ -49,7 +59,7 @@
         </nav>
 
         <!-- ===== PRODUCTS ===== -->
-        <section class="product">
+        <section class="product" id="products">
             <div class="announcement-bar">
                 <div class="announcement-track">
                     <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
@@ -65,113 +75,115 @@
 
             <h1>Products we offer</h1>
 
+            <p id="noResults"></p>
+
             <div class="products">
-                <div class="items">
+                <div class="items" data-name="Black Roof Tiles">
                     <img src="./img/roof-tileB.png" alt="roof tiles">
                     <p class="item-name">Black Roof Tiles</p>
                     <p class="price">R11,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i> ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Red Roof Tiles">
                     <img src="./img/roof-tileR.png" alt="roof tiles">
                     <p class="item-name">Red Roof Tiles</p>
                     <p class="price">R10,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Black Ridges Corner">
                     <img src="./img/ridge-cornerB.png" alt="ridge corner">
                     <p class="item-name">Black Ridges Corner</p>
                     <p class="price">R22,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Red Ridges Corner">
                     <img src="./img/ridge-cornerR.png" alt="ridge corner">
                     <p class="item-name">Red Ridges Corner</p>
                     <p class="price">R19,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Black Ridges">
                     <img src="./img/ridgeB.png" alt="roof ridge">
                     <p class="item-name">Black Ridges</p>
                     <p class="price">R25,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Red Ridges">
                     <img src="./img/ridgeR.png" alt="roof ridge">
                     <p class="item-name">Red Ridges</p>
                     <p class="price">R23,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Roof Sheet">
                     <img src="./img/roof-sheet.png" alt="roof sheet">
                     <p class="item-name">Roof Sheet</p>
                     <p class="price">R289,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Column Header/Footer">
                     <img src="./img/column-head.png" alt="column head">
                     <p class="item-name">Column Header/Footer</p>
                     <p class="price">R274,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Building Column">
                     <img src="./img/column.png" alt="column">
                     <p class="item-name">Building Column</p>
                     <p class="price">R599,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Lintel Concrete">
                     <img src="./img/lintel.png" alt="lintel">
                     <p class="item-name">Lintel Concrete</p>
                     <p class="price">R164,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="River Sand">
                     <img src="./img/river-sand.png" alt="sand">
                     <p class="item-name">River Sand</p>
                     <p class="price">R1 999,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Plastering Sand">
                     <img src="./img/plastering-sand.png" alt="sand">
                     <p class="item-name">Plastering Sand</p>
                     <p class="price">R1 699,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Cement Bricks">
                     <img src="./img/cement-brick.png" alt="bricks">
                     <p class="item-name">Cement Bricks</p>
                     <p class="price">R3,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Face Bricks">
                     <img src="./img/face-brick.png" alt="bricks">
                     <p class="item-name">Face Bricks</p>
                     <p class="price">R3,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Steel Nails">
                     <img src="./img/nails.png" alt="nails">
                     <p class="item-name">Steel Nails</p>
                     <p class="price">R39,99</p>
                     <button class="btn-cart"><i class="bi bi-cart4"></i>ADD TO CART</button>
                 </div>
 
-                <div class="items">
+                <div class="items" data-name="Oxide Cement Powder">
                     <img src="./img/oxide.png" alt="oxide">
                     <p class="item-name">Oxide Cement Powder</p>
                     <p class="price">R39,99</p>
@@ -246,5 +258,6 @@
             <p><i class="fa-solid fa-copyright"></i>2026 Copyright, Smart Build</p>
         </footer>
 
+        <script src="./script/nav.js"></script>
     </body>
 </html>
