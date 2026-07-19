@@ -1,10 +1,12 @@
-const featuredProductsContainer = document.getElementById("featuredProducts");
+const featuredProductsContainer =
+    document.getElementById("featuredProducts");
 
 function displayFeaturedProducts()
 {
     if(!featuredProductsContainer) return;
 
-    const featuredProducts = PRODUCTS.filter(product => product.featured);
+    const featuredProducts =
+        PRODUCTS.filter(product => product.featured);
 
     featuredProductsContainer.innerHTML =
         featuredProducts
