@@ -402,17 +402,26 @@ header > * {
 .items{
 
     position:relative;
+
     background:#fff;
+
     border-radius:12px;
-    overflow:hidden;
+
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
     transition:.3s;
+
+    text-align:center;
+
 }
 
 .items:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-6px);
 
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
 }
 
@@ -424,7 +433,7 @@ header > * {
 
     object-fit:contain;
 
-    transition:.4s;
+    margin:20px 0;
 
 }
 
@@ -434,23 +443,69 @@ header > * {
 
 }
 
-.items p      { margin-bottom: 1rem; }
-.item-name    { color: var(--secondary); }
-.price        { font-weight: bold; padding-bottom: 1rem; }
-
-.btn-cart {
-    border: none;
-    padding: 0.5rem;
-    width: 80%;
-    color: var(--white-text);
-    background-color: var(--primary);
-    border-radius: 5px;
+.items p      
+{ 
+    margin-bottom: 1rem; 
 }
 
-.btn-cart:hover {
-    border: 1px solid var(--primary);
-    background-color: var(--white-text);
-    color: black;
+.item-name{
+
+    font-size:20px;
+
+    color:var(--secondary);
+
+    margin-bottom:12px;
+
+    min-height:50px;
+
+}
+
+.price{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.price span{
+
+    font-size:16px;
+
+    color:#666;
+
+}
+
+.btn-cart{
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-cart:hover{
+
+    background:var(--secondary);
+
 }
 
 .btn-cart i {
@@ -460,15 +515,25 @@ header > * {
 
 .wishlist-btn{
 
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:42px;
+
+    height:42px;
+
     border:none;
 
-    background:none;
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
 
     cursor:pointer;
-
-    font-size:1.4rem;
-
-    color:#888;
 
     transition:.3s;
 
@@ -476,9 +541,9 @@ header > * {
 
 .wishlist-btn:hover{
 
-    color:#cc5d0d;
+    background:var(--primary);
 
-    transform:scale(1.15);
+    color:white;
 
 }
 
@@ -521,17 +586,19 @@ header > * {
 
 .rating{
 
-    color:gold;
+    color:#f7b500;
 
-    margin-top:10px;
+    margin-bottom:10px;
 
-    font-size:.9rem;
+    font-size:18px;
 
 }
 
 .rating span{
 
-    color:#777;
+    color:#666;
+
+    font-size:14px;
 
 }
 

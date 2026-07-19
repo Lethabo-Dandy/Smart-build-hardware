@@ -18,7 +18,7 @@
 
             <div class="logo">
                 <a href="../index.html">
-                    <img src="./img/logo.png">
+                    <img src="../img/logo.png">
                 </a>
             </div>
 
@@ -29,9 +29,9 @@
             <div class="nav-menu">
                 <ul class="mid-links-list">
                     <li><a href="../index.html">Home</a></li>
-                    <li class="current"><a href="product.html">Products</a></li>
+                    <li><a href="product.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
                 </ul>
 
                 <div class="nav-right">
@@ -58,26 +58,90 @@
             </div>
         </nav>
 
-        <!-- ===== PRODUCTS ===== -->
-        <section class="product" id="products">
-            <div class="announcement-bar">
-                <div class="announcement-track">
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i> Free delivery for orders over R3000!</span>
-                </div>
+        <!-- ===== CONTACT ===== -->
+        <section class="contact">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <p>Have a question about our products or services? Send us a message.</p>
+
+                <form>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option>Product Inquiry</option>
+                        <option>Price Request</option>
+                        <option>Order Information</option>
+                        <option>Delivery Question</option>
+                        <option>General Inquiry</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+
+                    <label for="fileUpload" class="custom-upload-btn">Choose File</label>
+                    <input type="file" id="fileUpload" name="fileUpload">
+
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
 
-            <h1>Products we offer</h1>
+            <div class="contact-us">
+                <div class="address">
+                    <h6 class="links-head">Address</h6>
+                    <p>
+                        Isibaya Street 1515 <br>
+                        Soshanguve <br>
+                        0152 <br>
+                        Pretoria
+                    </p>
+                </div>
 
-            <p id="noResults"></p>
+                <div class="social">
+                    <div class="links-head"><h4>Email & Social</h4></div>
+                    <ul>
+                        <li><a href="tel:+27798286421"><i class="bi bi-telephone"></i></a> 079 828 6421</li>
+                        <li><a href=""><i class="bi bi-envelope-at"></i></a> hr@smartbuild.co.za</li>
+                    </ul>
+                    <div class="link-icon">
+                        <ul>
+                            <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="products" id="productsContainer"></div>
+                <div class="Opening-times">
+                    <div class="links-head"><h4>Opening Times</h4></div>
+                    <div>
+                        <p>Mon - Fri: 08:00 - 17:00</p>
+                        <p>Sat & Sun: 08:00 - 14:00</p>
+                        <p>Holidays: 08:00 - 14:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MAP ===== -->
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps?q=Polokwane&output=embed"
+                width="80%"
+                height="550"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
         </section>
 
         <!-- ===== QUICK LINKS ===== -->
@@ -146,13 +210,7 @@
             <p><i class="fa-solid fa-copyright"></i>2026 Copyright, Smart Build</p>
         </footer>
 
-        <!-- ===================== SCRIPT =============================-->
-        <script src="../js/config.js"></script>
-        <script src="../js/data.js"></script>
-        <script src="../js/utils/currency.js"></script>
-        <script src="../js/utils/helpers.js"></script>
-        <script src="../js/components/product-card.js"></script>
-        <script src="../js/pages/products.js"></script>
-        <script src="./js/store/cart.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/store/cart.js"></script>
     </body>
 </html>

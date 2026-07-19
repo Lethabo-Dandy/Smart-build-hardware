@@ -2,42 +2,30 @@ function createProductCard(product)
 {
     return `
         <div class="items">
-
             <button
                 class="wishlist-btn"
                 data-id="${product.id}">
-
-                <i class="bi bi-heart"></i>
-
+                    <i class="bi bi-heart"></i>
             </button>
 
-            <a href="product-details.html?id=${product.id}">
-
-                <img
-                    src="${product.image}"
-                    alt="${product.name}">
-
-            </a>
+            <img
+                src="${product.image}"
+                alt="${product.name}"
+                >
 
             <div class="rating">
-
                 ${"★".repeat(product.rating)}
+                ${"☆".repeat(5-product.rating)}
 
                 <span>(${product.reviews})</span>
-
             </div>
 
-            <a
-                href="product-details.html?id=${product.id}"
-                class="item-name">
-
+            <h3 class="item-name">
                 ${product.name}
-
-            </a>
+            </h3>
 
             <p class="price">
-
-                R${formatPrice(product.price)}
+                R${product.price.toFixed(2)}
 
                 <span>/ ${product.unit}</span>
             </p>
@@ -46,12 +34,10 @@ function createProductCard(product)
                 class="btn-cart"
                 data-id="${product.id}">
 
-                <i class="bi bi-cart4"></i>
+                    <i class="bi bi-cart4"></i>
 
-                ADD TO CART
-
+                ${product.stock > 0 ? "ADD TO CART" : "OUT OF STOCK"}
             </button>
-
         </div>
     `;
 }
