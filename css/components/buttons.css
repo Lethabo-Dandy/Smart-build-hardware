@@ -1,0 +1,81 @@
+.btn {
+    display: inline-flex;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.btn button {
+    border: none;
+    border-radius: 15px;
+    color: var(--white-text);
+    background-color: var(--primary);
+    font-size: 1rem;
+    height: 2.6rem;
+    width: 9.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn button:hover,
+.btn-quote:hover {
+    background-color: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.btn-shop {
+    border: none;
+    border-radius: 15px;
+    color: var(--white-text);
+    font-size: 1rem;
+    background-color: var(--primary);
+    height: 2.6rem;
+    width: 8.4rem;
+    letter-spacing: .1rem;
+    margin-top: 5rem;
+}
+
+.btn-shop:hover {
+    background-color: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.btn-quote {
+    border: 1px solid var(--secondary);
+    border-radius: 15px;
+    color: var(--white-text);
+    font-size: 1rem;
+    background-color: var(--primary);
+    height: 2.6rem;
+    width: 8.4rem;
+    letter-spacing: .1rem;
+}
+
+.btn-details{
+
+    width:80%;
+
+    margin-top:12px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    background:none;
+
+    color:#414443;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-details:hover{
+
+    color:#cc5d0d;
+
+}

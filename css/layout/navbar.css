@@ -1,0 +1,99 @@
+/* =========================================
+   NAVBAR
+========================================= */
+.navbar {
+    background: rgba(226, 225, 225, 0.95);
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 0;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Hide checkbox */
+#nav-toggle {
+    display: none;
+}
+
+/* Search + icons group */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+/* Logo */
+.logo img {
+    max-height: 8rem;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Nav menu — desktop: inline flex row */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+}
+
+/* Page links */
+.mid-links-list {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+    padding: 0;
+}
+
+.mid-links-list li a {
+    font-size: 1.3rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: var(--secondary);
+}
+
+.mid-links-list li a:hover {
+    transform: scale(1.1);
+}
+
+.mid-links-list li.current a {
+    color: var(--primary);
+    font-weight: bold;
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.icon-links {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    font-size: 1.3rem;
+    color: var(--secondary);
+}
+
+.icon-links li a {
+    color: var(--secondary);
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.icon-links li a:hover {
+    transform: scale(1.1);
+    color: var(--primary);
+}
+
+/* Hamburger button — hidden on desktop */
+.hamburger-btn {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 0 1rem;
+    line-height: var(--navbar-height);
+    margin-left: auto;
+    z-index: 1100;
+}

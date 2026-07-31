@@ -21,7 +21,10 @@ const PRODUCTS = [
         maxStock: 21150,
         featured: true,
         taxable: true,
-        images: "../img/roof-tile-grey.png",
+        images: 
+        [
+            "img/roof-tileB.png"
+        ],
         description: "Premium concrete roof tile designed for long-lasting residential and commercial roofing.",
         specifications: 
         {
@@ -52,7 +55,10 @@ const PRODUCTS = [
         reorderLevel: 2000,
         maxStock: 20000,
         featured: true,
-        images: "../img/roof-tile-red.png",
+        images: 
+        [
+            "img/roof-tileR.png"
+        ],
         description: "Durable concrete roof tile providing excellent weather resistance and a classic finish.",
         specifications: 
         {
@@ -87,7 +93,10 @@ const PRODUCTS = [
         maxStock: 20000,
         featured: true,
         taxable: true,
-        images: "../img/ridge-grey.png",
+        images: 
+        [
+            "../img/ridgeB.png"
+        ],
         description: "Concrete roof ridge providing a strong and attractive roof finish.",
         specifications: 
         {
@@ -116,7 +125,10 @@ const PRODUCTS = [
         stock: 11400,
         maxStock: 20000,
         featured: true,
-        images: "../img/ridge-red.png",
+        images: 
+        [
+            "../img/ridgeR.png"
+        ],
         description: "Concrete roof ridge for completing ridge lines with a professional finish.",
         specifications: 
         {
@@ -153,7 +165,7 @@ const PRODUCTS = [
         taxable: true,
         images: 
         [
-            "../img/ridge-corner-grey.png"
+            "../img/ridge-cornerB.png"
         ],
         description: "Concrete ridge corner designed to provide a neat finish at roof intersections.",
         specifications: 
@@ -185,9 +197,9 @@ const PRODUCTS = [
         maxStock: 20000,
         featured: true,
         taxable: true,
-        image: 
+        images: 
         [
-            "../img/ridge-corner-red.png"
+            "../img/ridge-cornerR.png"
         ],
         description: "Concrete ridge corner manufactured for durable and attractive roof finishes.",
         specifications: 
@@ -223,7 +235,7 @@ const PRODUCTS = [
         maxStock: 20000,
         featured: true,
         taxable: true,
-        image: 
+        images: 
         [
             "../img/roof-sheet.png"
         ],
@@ -325,7 +337,7 @@ const PRODUCTS = [
         maxStock: 20000,
         featured: true,
         taxable: true,
-        image: 
+        images: 
         [
             "../img/roof-sheet.png"
         ],
@@ -971,7 +983,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/nail-50.png"
+            "../img/nails.png"
         ],
 
         description: "50mm galvanized steel nails supplied in a box for general construction work.",
@@ -1013,7 +1025,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/nail-75.png"
+            "../img/nails.png"
         ],
 
         description: "75mm galvanized steel nails supplied in boxes.",
@@ -1055,7 +1067,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/nail-90.png"
+            "../img/nails.png"
         ],
 
         description: "90mm galvanized steel nails for roofing and construction.",
@@ -1097,7 +1109,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/nail-100.png"
+            "../img/nails.png"
         ],
 
         description: "100mm galvanized construction nails.",
@@ -1139,7 +1151,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/nail-125.png"
+            "../img/nails.png"
         ],
 
         description: "125mm heavy-duty galvanized steel nails.",
@@ -1185,7 +1197,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/oxide-1kg.png"
+            "../img/oxide.png"
         ],
 
         description: "Premium oxide cement colouring powder (1kg).",
@@ -1226,7 +1238,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/oxide-2kg.png"
+            "../img/oxide.png"
         ],
 
         description: "Premium oxide cement colouring powder (2kg).",
@@ -1267,7 +1279,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/oxide-5kg.png"
+            "../img/oxide.png"
         ],
 
         description: "Premium oxide cement colouring powder (5kg).",
@@ -1308,7 +1320,7 @@ const PRODUCTS = [
         taxable: true,
 
         images: [
-            "../img/oxide-10kg.png"
+            "../img/oxide.png"
         ],
 
         description: "Premium oxide cement colouring powder (10kg).",

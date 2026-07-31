@@ -5,7 +5,7 @@ function createProductDetails(product)
         <section class="details-container">
             <div class="details-image">
                 <img
-                src="${product.image}"
+                src="${image}"
                 alt="${product.name}">
             </div>
 

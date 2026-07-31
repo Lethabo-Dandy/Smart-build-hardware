@@ -1,21 +1,28 @@
 function createProductCard(product)
 {
+    const image = Array.isArray(product.images)
+        ? product.images[0]
+        : (product.images || product.image);
+
+    const outOfStock = product.stock <= 0;
+
     return `
         <div class="items">
             <button
                 class="wishlist-btn"
                 data-id="${product.id}">
-                    <i class="bi bi-heart"></i>
+                <i class="bi bi-heart"></i>
             </button>
 
-            <img
-                src="${product.image}"
-                alt="${product.name}"
-                >
+            <a href="product-details.html?id=${product.id}">
+                <img
+                    src="${image}"
+                    alt="${product.name}">
+            </a>
 
             <div class="rating">
                 ${"★".repeat(product.rating)}
-                ${"☆".repeat(5-product.rating)}
+                ${"☆".repeat(5 - product.rating)}
 
                 <span>(${product.reviews})</span>
             </div>
@@ -31,13 +38,15 @@ function createProductCard(product)
             </p>
 
             <button
-                class="btn-cart"
-                data-id="${product.id}">
+                class="btn-cart ${outOfStock ? "disabled" : ""}"
+                data-id="${product.id}"
+                ${outOfStock ? "disabled" : ""}>
 
-                    <i class="bi bi-cart4"></i>
+                <i class="bi bi-cart4"></i>
 
-                ${product.stock > 0 ? "ADD TO CART" : "OUT OF STOCK"}
+                ${outOfStock ? "OUT OF STOCK" : "ADD TO CART"}
             </button>
+
         </div>
     `;
 }

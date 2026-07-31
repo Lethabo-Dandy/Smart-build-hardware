@@ -1,0 +1,89 @@
+/* =========================================
+   ABOUT
+========================================= */
+.about 
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.about h1 
+{
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.about-details 
+{
+    font-size: 1.5rem;
+}
+
+.about-details img 
+{
+    width: 40rem;
+}
+
+.p2 
+{
+    display: flex;
+    background-color: white;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.p 
+{
+    display: inline-block;
+    padding-left: 5rem;
+}
+
+.p3 
+{
+    background: url('../../img/background1.jpg') center / cover no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.p3 .dark 
+{
+    color: black;
+    font-weight: bold;
+}
+
+.why 
+{
+    color: var(--white-text);
+    padding: 5rem 5rem 1rem 2rem;
+    display: flex;
+}
+
+.why p, .why h3 
+{
+    padding-left: 10rem;
+}
+
+.p4 
+{
+    background: url('../img/white-background.jpg') center / cover no-repeat;
+    background-size: cover;
+    display: block;
+    text-align: center;
+}
+
+.p4 p 
+{
+    padding: 2rem 5rem 1rem 5rem;
+}
+
+.p4 .highlight 
+{
+    font-weight: bold;
+}
+
+.p4 .highlight:hover 
+{
+    text-decoration: underline;
+}
+
+.p4 .bold 
+{
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+/* =========================================
+   QUICK LINKS
+========================================= */
+.quick-links {
+    color: var(--white-text);
+    background-color: var(--secondary);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 2rem;
+    padding: 2rem 2rem 2rem 5rem;
+}
+
+.quick-links h4    { font-size: 1.5rem; padding-bottom: 1rem; }
+.address h6        { font-size: 1.1rem; padding-bottom: 1rem; }
+.quick-links a     { color: var(--white-text); }
+.quick-links p,
+.quick-links li    { font-size: 1rem; padding-bottom: 1rem; }
+.quick-links a:hover { color: var(--primary); transform: scale(1.1); }
+
+.link-icon ul {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0;
+}
+
+.link-icon li {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}

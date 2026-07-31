@@ -1,0 +1,113 @@
+/* =========================================
+   CONTACT
+========================================= */
+.contact {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact > .contact-form > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 10px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: var(--secondary);
+}
+
+.contact-us {
+    display: block;
+    border-left: 2px solid var(--primary);
+    padding-left: 2rem;
+    min-width: 220px;
+}
+
+.contact-us .links-head {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.contact-us .p,
+.contact-us li {
+    padding-bottom: 0.8rem;
+}
+
+.contact li a:hover {
+    cursor: pointer;
+}
+
+.contact a:hover {
+    color: var(--primary);
+}
+
+.custom-upload-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--secondary);
+    color: var(--white-text);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.custom-upload-btn:hover {
+    background-color: var(--primary);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* =========================================
+   MAP
+========================================= */
+.map {
+    background-color: rgba(175, 153, 124, 0.171);
+    text-align: center;
+}
+
+.map h2 {
+    padding: 2rem 0;
+}
+
+.map iframe {
+    max-width: 100%;
+}

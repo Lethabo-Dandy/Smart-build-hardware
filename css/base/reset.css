@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Times New Roman', 'Open Sans';
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--secondary);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.highlight {
+    color: var(--primary);
+}

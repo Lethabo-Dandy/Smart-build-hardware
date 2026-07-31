@@ -1,0 +1,38 @@
+/* =========================================
+   LARGE DESKTOP (≤ 1440px)
+========================================= */
+@media (max-width: 1440px) {
+    .mid-links-list li a { font-size: 1.1rem; }
+    .search-box input    { width: 180px; }
+
+    .service-card {
+        height: 20rem;
+        width: 16rem;
+        margin-bottom: 3rem;
+    }
+    .service-card .icon { font-size: 3rem; }
+    .service-card h6    { font-size: 1.2rem; }
+    .service-card p     { font-size: 1rem; }
+
+    .product            { font-size: 20px; }
+    .product h1         { padding-top: 2rem; }
+
+    .btn-shop {
+        height: 2.2rem;
+        width: 7rem;
+        margin-top: 2rem;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+        margin: 0 10rem;
+    }
+
+    .quick-links        { padding: 1rem 1rem 1rem 2rem; }
+    .quick-links h4     { font-size: 1.2rem; }
+    .address h6         { font-size: 1rem; padding-bottom: 0.5rem; }
+    .quick-links p,
+    .quick-links li     { font-size: .9rem; padding-bottom: .4rem; }
+    .link-icon ul       { gap: 1rem; }
+    .link-icon li       { font-size: 1.1rem; }
+}

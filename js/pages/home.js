@@ -1,17 +1,16 @@
-const featuredProductsContainer =
+const featuredProducts =
     document.getElementById("featuredProducts");
 
-function displayFeaturedProducts()
+if(featuredProducts)
 {
-    if(!featuredProductsContainer) return;
-
-    const featuredProducts =
+    const featured =
         PRODUCTS.filter(product => product.featured);
 
-    featuredProductsContainer.innerHTML =
-        featuredProducts
-            .map(createProductCard)
+    featuredProducts.innerHTML =
+        featured
+            .map(product => createProductCard(product))
             .join("");
-}
 
-displayFeaturedProducts();
+    attachCartEvents();
+    attachWishlistEvents();
+}
