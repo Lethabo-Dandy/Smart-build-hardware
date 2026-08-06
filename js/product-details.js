@@ -13,22 +13,14 @@ if(!container)
 
 if(!product)
 {
-    container.innerHTML=`
-
+    container.innerHTML=
+    `
         <h2>
-
             Product not found.
-
         </h2>
-
     `;
-
 }
 else
 {
-
-    container.innerHTML=
-
-    createProductDetails(product);
-
+    container.innerHTML = createProductDetails(product);
 }

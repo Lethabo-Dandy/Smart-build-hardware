@@ -1,7 +1,6 @@
 /* =========================================
    PRODUCT CARDS
 ========================================= */
-
 .product 
 {
     position: relative;
@@ -19,7 +18,6 @@
 /* =========================================
    PRODUCTS GRID
 ========================================= */
-
 .products 
 {
     display: grid;
@@ -30,158 +28,139 @@
     padding-top: 2rem;
 }
 
-
 /* =========================================
    PRODUCT CARD
 ========================================= */
-
 .items
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    justify-content: space-between;
     position: relative;
-
     background: #fff;
     border-radius: 12px;
-
     padding: 16px;
+    border: 1px solid #ececec;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
 
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
-
-    transition: .3s;
-
-    text-align: center;
-
-    /* Removed min-height */
+    transition:
+        transform .3s,
+        box-shadow .3s,
+        border-color .3s;
 }
 
 .items:hover
 {
     transform: translateY(-6px);
-
     box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
-
 
 /* =========================================
    PRODUCT IMAGE
 ========================================= */
-
 .items img
 {
     width: 100%;
     height: 180px;
-
     object-fit: contain;
-
-    margin: 8px 0;
+    margin: 8px 0 12px;
+    transition: transform .35s ease;
 }
 
 .items:hover img
 {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
-
 
 /* =========================================
    WISHLIST
 ========================================= */
-
 .wishlist-btn
 {
     position: absolute;
-
     top: 15px;
     right: 15px;
-
     width: 42px;
     height: 42px;
-
-    border: none;
+    border: 2px solid transparent;
     border-radius: 50%;
-
-    background: white;
-
+    background: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,.15);
-
     cursor: pointer;
-
-    transition: .3s;
-
+    transition: all .3s ease;
     z-index: 2;
-}
-
-.wishlist-btn:hover
-{
-    background: var(--primary);
-    color: white;
 }
 
 .wishlist-btn i
 {
     color: #888;
     font-size: 1.2rem;
+    transition: color .3s ease;
+}
+
+/* Hover */
+.wishlist-btn:hover
+{
+    background: #fff;
+    border-color: var(--primary);
+    transform: scale(1.08);
+}
+
+.wishlist-btn:hover i
+{
+    color: var(--primary);
+}
+
+/* Active (added to wishlist) */
+.wishlist-btn.active
+{
+    background: #fff;
+    border-color: var(--primary);
 }
 
 .wishlist-btn.active i
 {
-    color: red;
+    color: var(--primary);
 }
-
 
 /* =========================================
    RATING
 ========================================= */
-
 .rating
 {
     color: #f7b500;
-
-    font-size: 18px;
-
-    margin: 4px 0 2px;
+    font-size: 17px;
+    margin: 8px 0 6px;
 }
 
 .rating span
 {
-    color: #666;
-
-    font-size: 14px;
+    color: #777;
+    font-size: .85rem;
+    margin-left: 4px;
 }
 
 
 /* =========================================
    PRODUCT NAME
 ========================================= */
-
 .item-name
 {
-    font-size: 20px;
-
+    font-size: 17px;
     color: var(--secondary);
-
     margin: 2px 0 4px;
-
     min-height: 0;
-
     line-height: 1.3;
 }
-
 
 /* =========================================
    PRICE
 ========================================= */
-
 .price
 {
     font-size: 1.4rem;
-
     font-weight: bold;
-
     color: #414443;
-
     margin: 2px 0 10px;
 }
 
@@ -192,32 +171,30 @@
     color: #666;
 }
 
-
 /* =========================================
    STOCK
 ========================================= */
-
 .stock
 {
     padding: 6px 12px;
-
     border-radius: 20px;
-
     font-size: .75rem;
-
     font-weight: bold;
 }
 
 .in-stock
 {
     background: #eaf7ea;
-
     color: green;
 }
 
 .out-stock
 {
     background: #ffe6e6;
-
     color: red;
+}
+
+.btn-cart
+{
+    margin-top: auto;
 }
