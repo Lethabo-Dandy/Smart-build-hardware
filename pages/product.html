@@ -51,8 +51,19 @@
 
                     <ul class="icon-links">
                         <li><a href="wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
-                        <li><a href="cart.html"><i class="bi bi-cart4"></i></a></li>
-                        <li><a href="account"><i class="bi bi-person-circle"></i></a></li>
+                        <li>
+                            <a href="cart.html" class="cart-icon">
+
+                                <i class="bi bi-cart4"></i>
+
+                                <span id="cartCount" class="cart-count">
+                                    0
+                                </span>
+
+                            </a>
+                        </li>
+
+                        <li><a href="my-orders.html"><i class="bi bi-person-circle"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -152,9 +163,9 @@
         <script src="../js/utils/currency.js"></script>
         <script src="../js/utils/helpers.js"></script>
         <script src="../js/components/product-card.js"></script>
-        <script src="../js/store/cart-events.js"
-        <script src="../js/store/wishlist-events.js"
-        <script src="../js/pages/products.js"></script>
+        <script src="../js/store/cart-events.js"></script>
+        <script src="../js/store/wishlist-events.js"></script>
         <script src="../js/store/cart.js"></script>
+        <script src="../js/pages/products.js"></script>
     </body>
 </html>

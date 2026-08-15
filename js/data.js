@@ -23,7 +23,7 @@ const PRODUCTS = [
         taxable: true,
         images: 
         [
-            "img/roof-tileB.png"
+            "../img/roof-tileB.png"
         ],
         description: "Premium concrete roof tile designed for long-lasting residential and commercial roofing.",
         specifications: 
@@ -57,7 +57,7 @@ const PRODUCTS = [
         featured: true,
         images: 
         [
-            "img/roof-tileR.png"
+            "../img/roof-tileR.png"
         ],
         description: "Durable concrete roof tile providing excellent weather resistance and a classic finish.",
         specifications: 
@@ -1270,7 +1270,7 @@ const PRODUCTS = [
         costPrice: 120.00,
         price: 149.99,
 
-        stock: 120,
+        stock: 12,
 
         reorderLevel: 25,
         maxStock: 200,

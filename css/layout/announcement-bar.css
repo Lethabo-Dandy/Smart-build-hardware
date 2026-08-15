@@ -1,10 +1,10 @@
 .announcement-bar {
     position: sticky;
-    top: 0;
-    z-index: 1000;
+    top: 5rem;
     background-color: var(--secondary);
     overflow: hidden;
     padding: 0.7rem 0;
+    z-index: 999;
 }
 
 .announcement-track {

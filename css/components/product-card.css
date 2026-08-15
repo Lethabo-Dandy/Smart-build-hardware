@@ -198,3 +198,37 @@
 {
     margin-top: auto;
 }
+
+/* =========================================
+   ADD TO CART ANIMATION
+========================================= */
+
+.cart-fly-image
+{
+    position: fixed;
+
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    transition:
+        left .7s cubic-bezier(.4, 0, 1, 1),
+        top .7s cubic-bezier(.4, 0, 1, 1),
+        width .7s ease,
+        height .7s ease,
+        opacity .7s ease;
+
+    filter: drop-shadow(
+        0 5px 10px rgba(0,0,0,.2)
+    );
+}
+
+.btn-cart.added
+{
+    transform: scale(.96);
+}

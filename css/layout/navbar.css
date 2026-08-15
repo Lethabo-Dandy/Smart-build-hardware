@@ -2,13 +2,14 @@
    NAVBAR
 ========================================= */
 .navbar {
-    background: rgba(226, 225, 225, 0.95);
+    background: #fcfcfc;
     width: 100%;
     height: var(--navbar-height);
     display: flex;
     align-items: center;
     padding: 0 1rem 0 0;
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 

@@ -44,7 +44,8 @@
                             type="text"
                             id="searchInput" 
                             placeholder="Search products..."
-                            autocomplete="off">
+                            autocomplete="off"
+                            >
 
                         <button id="searchBtn" type="button">
                             <i class="bi bi-search"></i>
@@ -54,16 +55,20 @@
                     </div>
 
                     <ul class="icon-links">
-                        <li><a href="wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
+                        <li><a href="./pages/wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
                         <li>
-                            <a href="cart.html">
+                            <a href="./pages/cart.html" class="cart-icon">
+
                                 <i class="bi bi-cart4"></i>
-                                <span class="cart-count">
+
+                                <span id="cartCount" class="cart-count">
                                     0
                                 </span>
+
                             </a>
                         </li>
-                        <li><a href="account"><i class="bi bi-person-circle"></i></a></li>
+                        
+                        <li><a href="pages/my-orders.html"><i class="bi bi-person-circle"></i></a></li>
                     </ul>
                 </div>
             </div>

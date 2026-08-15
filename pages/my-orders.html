@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+        <title>My Orders | Smart Build</title>
+
+        <link rel="stylesheet"
+            href="../css/main.css">
+
+        <link rel="stylesheet"
+            href="../css/pages/my-orders.css">
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!-- ==========================================
+            NAVIGATION
+        ========================================== -->
+        <nav class="navbar">
+            <input
+                type="checkbox"
+                id="nav-toggle">
+
+            <div class="logo">
+                <a href="../index.html">
+
+                    <img src="../img/logo.png">
+                </a>
+            </div>
+
+            <label
+                for="nav-toggle"
+                class="hamburger-btn">
+
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <div class="nav-menu">
+                <ul class="mid-links-list">
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-right">
+                    <ul class="icon-links">
+                        <li>
+                            <a href="wishlist.html">
+                                <i class="bi bi-heart-fill"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="cart.html"
+                                class="cart-icon">
+
+                                <i class="bi bi-cart4"></i>
+
+                                <span
+                                    id="cartCount"
+                                    class="cart-count">
+
+                                    0
+
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="my-orders.html">
+
+                                <i class="bi bi-person-circle"></i>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ==========================================
+            MY ORDERS
+        ========================================== -->
+        <main class="my-orders-page">
+            <section class="my-orders-container">
+                <div class="orders-header">
+                    <span class="orders-icon">
+
+                        <i class="bi bi-box-seam"></i>
+                    </span>
+
+                    <h1>
+                        My Orders
+                    </h1>
+
+                    <p>
+                        Enter your order details to view
+                        your order.
+                    </p>
+                </div>
+
+                <!-- ==========================================
+                    ORDER LOOKUP
+                ========================================== -->
+                <div class="order-lookup">
+                    <h2>
+                        Find Your Order
+                    </h2>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phoneNumber"
+                            placeholder="e.g. 079 828 6421"
+                            autocomplete="tel">
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="orderNumber">
+                            Order Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="orderNumber"
+                            placeholder="e.g. SB-20260815-0001"
+                            autocomplete="off">
+                    </div>
+
+                    <button
+                        id="findOrderBtn"
+                        class="find-order-btn"
+                        type="button">
+
+                        <i class="bi bi-search"></i>
+
+                        Find Order
+
+                    </button>
+
+                    <p
+                        id="orderMessage"
+                        class="order-message">
+                    </p>
+                </div>
+
+                <!-- ==========================================
+                    ORDER RESULT
+                ========================================== -->
+                <div
+                    id="orderResult"
+                    class="order-result">
+                </div>
+            </section>
+        </main>
+
+        <!-- ==========================================
+            FOOTER
+        ========================================== -->
+        <footer>
+            <p>
+                <i class="fa-solid fa-copyright"></i>
+                2026 Copyright, Smart Build
+            </p>
+        </footer>
+
+        <!-- ==========================================
+            SCRIPTS
+        ========================================== -->
+        <script src="../js/store/cart.js"></script>
+        <script src="../js/data.js"></script>
+        <script src="../js/pages/my-orders.js"></script>
+    </body>
+</html>
