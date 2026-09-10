@@ -2,13 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+            >
 
-        <title>Shopping Cart | Smart Build</title>
+        <title>My Wishlist | Smart Build</title>
 
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+            >
+
+        <!-- Your existing styles -->
+        <link
+            rel="stylesheet"
+            href="../css/main.css"
+            >
+
+        <link
+            rel="stylesheet"
+            href="../css/product-card.css">
+
+
+        <link
+            rel="stylesheet"
+            href="../css/pages/wishlist.css"
+            >
     </head>
 
     <body>
@@ -114,106 +135,54 @@
             </div>
         </nav>
 
-        <!-- =========================================================
-            CART
-        ========================================================== -->
-        <main class="cart-page">
-            <!-- ANNOUNCEMENT -->
-            <div class="announcement-bar">
-                <div class="announcement-track">
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
-                    <span><i class="bi bi-truck"></i>Free delivery for orders over R3000!</span>
+        <!-- ==========================================
+            WISHLIST
+        ========================================== -->
+        <main class="wishlist-page">
+            <section class="wishlist-container">
+                <div class="wishlist-header">
+                    <h1>
+                        My Wishlist
+                    </h1>
+
+                    <p>
+                        Products you've saved for later.
+                    </p>
                 </div>
-            </div>
 
-            <!-- PAGE TITLE -->
-            <section class="cart-container">
-                <h1>Shopping Cart</h1>
-
-                <!-- =================================================
-                    EMPTY CART
-                ================================================== -->
+                <!-- ==========================================
+                    WISHLIST PRODUCTS
+                ========================================== -->
                 <div
-                    id="emptyCart"
-                    class="empty-cart">
+                    id="wishlistItems"
+                    class="wishlist-items">
+                </div>
 
-                    <i class="bi bi-cart-x"></i>
+                <!-- ==========================================
+                    EMPTY WISHLIST
+                ========================================== -->
+                <div
+                    id="emptyWishlist"
+                    class="empty-wishlist"
+                    style="display: none;">
 
-                    <h2>Your cart is empty</h2>
+                    <i class="bi bi-heart"></i>
 
-                    <p>You haven't added any products to your cart yet.</p>
+                    <h2>
+                        Your wishlist is empty
+                    </h2>
+
+                    <p>
+                        Save products you like and
+                        find them here later.
+                    </p>
 
                     <a
                         href="product.html"
-                        class="continue-shopping">
+                        class="continue-shopping-btn">
 
-                        Continue Shopping
+                        Browse Products
                     </a>
-                </div>
-
-                <!-- =================================================
-                    CART CONTENT
-                ================================================== -->
-                <div id="cartContent" class="cart-content">
-                    <!-- CART ITEMS -->
-                    <div class="cart-items">
-                        <div 
-                            id="cartItems" 
-                            class="cart-items-list">
-                        </div>
-                    </div>
-
-                    <!-- CART SUMMARY -->
-                    <aside class="cart-summary">
-                        <h2>Order Summary</h2>
-
-                        <div class="summary-row">
-                            <span>Subtotal</span>
-                            <span id="cartSubtotal">
-                                R0.00
-                            </span>
-                        </div>
-
-                        <div class="summary-row">
-                            <span>Delivery</span>
-                            <span id="cartDelivery">
-                                Calculated at checkout
-                            </span>
-                        </div>
-
-                        <div class="summary-divider"></div>
-
-                        <div class="summary-total">
-                            <span>Total</span>
-
-                            <strong id="cartTotal">
-                                R0.00
-                            </strong>
-                        </div>
-
-                        <button
-                            id="checkoutBtn"
-                            class="checkout-btn"
-                            type="button">
-
-                            Proceed to Checkout
-                        </button>
-
-                        <a
-                            href="product.html"
-                            class="continue-shopping">
-
-                            <i class="bi bi-arrow-left"></i>
-
-                            Continue Shopping
-                        </a>
-                    </aside>
                 </div>
             </section>
         </main>
@@ -304,100 +273,6 @@
             </div>
         </section>
 
-        <!-- ===================== CUSTOM MODAL ===================== -->
-        <div class="modal-overlay" id="customModal">
-            <div class="custom-modal">
-
-                <button
-                    type="button"
-                    class="modal-close"
-                    id="modalClose">
-
-                    <i class="bi bi-x"></i>
-
-                </button>
-
-                <div class="modal-icon" id="modalIcon">
-
-                    <i class="bi bi-exclamation-circle"></i>
-                </div>
-
-                <h3 id="modalTitle">
-                    Confirmation
-                </h3>
-
-                <p id="modalMessage">
-                    Are you sure?
-                </p>
-
-                <div class="modal-actions">
-                    <button
-                        type="button"
-                        class="modal-btn modal-cancel"
-                        id="modalCancel">
-
-                        Cancel
-                    </button>
-
-                    <button
-                        type="button"
-                        class="modal-btn modal-confirm"
-                        id="modalConfirm">
-
-                        Confirm
-                    </button>
-                </div>
-            </div>
-
-            <!-- ==========================================
-                STOCK WARNING MODAL
-            ========================================== -->
-
-            <div
-                id="stockWarningModal"
-                class="stock-warning-overlay">
-
-                <div class="stock-warning-modal">
-
-                    <button
-                        type="button"
-                        id="closeStockWarning"
-                        class="stock-warning-close">
-
-                        <i class="bi bi-x-lg"></i>
-
-                    </button>
-
-
-                    <div class="stock-warning-icon">
-
-                        <i class="bi bi-exclamation-triangle"></i>
-
-                    </div>
-
-
-                    <h2>Not Enough Stock</h2>
-
-
-                    <p id="stockWarningMessage">
-                        Not enough stock available.
-                    </p>
-
-
-                    <button
-                        type="button"
-                        id="stockWarningOk"
-                        class="stock-warning-ok">
-
-                        OK
-
-                    </button>
-
-                </div>
-
-            </div>
-        </div>
-
         <!-- =========================================================
             FOOTER
         ========================================================== -->
@@ -407,19 +282,19 @@
 
                 2026 Copyright, Smart Build
             </p>
-        </footer>
+        </footer>    
 
-        <!-- =========================================================
+        <!-- ==========================================
             JAVASCRIPT
-        ========================================================== -->
+        ========================================== -->
         <script src="../js/config.js"></script>
         <script src="../js/data.js"></script>
         <script src="../js/utils/currency.js"></script>
         <script src="../js/utils/helpers.js"></script>
-        <script src="../js/utils/modal.js"></script>
         <script src="../js/store/cart.js"></script>
-        <script src="../js/store/cart-events.js"></script>
-        <script src="../js/pages/cart.js"></script>
+        <script src="../js/store/wishlist.js"></script>
+        <script src="../js/store/wishlist-events.js"></script>
+        <script src="../js/pages/wishlist.js"></script>
         <script src="../js/search.js"></script>
     </body>
 </html>

@@ -246,9 +246,9 @@ function setQuantity(productId, quantity)
     if(!product) return;
 
 
-    /*
-        INVALID / ZERO
-    */
+    /* ==========================================
+       INVALID / ZERO
+    ========================================== */
 
     if(
         isNaN(quantity) ||
@@ -256,18 +256,17 @@ function setQuantity(productId, quantity)
     )
     {
         removeFromCart(productId);
-
         return;
     }
 
 
-    /*
-        EXCEEDS STOCK
-    */
+    /* ==========================================
+       EXCEEDS STOCK
+    ========================================== */
 
     if(quantity > product.stock)
     {
-        alert(
+        showStockWarning(
             `Only ${product.stock} ${product.unit}(s) available in stock.`
         );
 
@@ -280,7 +279,6 @@ function setQuantity(productId, quantity)
 
 
     saveCart();
-
     updateCartCount();
 }
 

@@ -11,7 +11,6 @@
     </head>
 
     <body>
-
         <!-- ===== NAVBAR ===== -->
         <nav class="navbar">
             <input type="checkbox" id="nav-toggle">
@@ -50,7 +49,13 @@
                     </div>
 
                     <ul class="icon-links">
-                        <li><a href="wishlist.html"><i class="bi bi-heart-fill"></i></a></li>
+                        <li>
+                            <a href="wishlist.html" class="wishlist-icon">
+
+                                <i class="bi bi-heart-fill"></i>
+                            </a>
+                        </li>
+
                         <li>
                             <a href="cart.html" class="cart-icon">
 
@@ -86,15 +91,145 @@
 
             <h1>Products we offer</h1>
 
+            <!-- ==========================================
+                PRODUCT FILTERS
+            ========================================== -->
+            <div class="product-filters">
+                <!-- ==========================================
+                    CATEGORY FILTER
+                ========================================== -->
+                <div class="filter-group">
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+                        <option value="all">
+                            All Categories
+                        </option>
+                    </select>
+                </div>
+
+                <!-- ==========================================
+                    SUB-CATEGORY FILTER
+                ========================================== -->
+                <div class="filter-group">
+                    <label for="subCategoryFilter">
+                        Sub-category
+                    </label>
+
+                    <select id="subCategoryFilter">
+                        <option value="all">
+                            All Sub-categories
+                        </option>
+                    </select>
+                </div>
+
+                <!-- ==========================================
+                    PRICE FILTER
+                ========================================== -->
+                <div class="filter-group price-filter">
+                    <label>
+                        Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="minPrice"
+                        placeholder="Min"
+                        min="0"
+                        step="0.01">
+
+                    <span>-</span>
+
+                    <input
+                        type="number"
+                        id="maxPrice"
+                        placeholder="Max"
+                        min="0"
+                        step="0.01">
+                </div>
+
+                <!-- ==========================================
+                    STOCK FILTER
+                ========================================== -->
+                 <div class="filter-group">
+                    <label for="stockFilter">
+                        Stock
+                    </label>
+
+                    <select id="stockFilter">
+
+                        <option value="all">
+                            All Products
+                        </option>
+
+                        <option value="in-stock">
+                            In Stock
+                        </option>
+
+                        <option value="out-of-stock">
+                            Out of Stock
+                        </option>
+                    </select>
+                </div>
+
+                <!-- ==========================================
+                    SORT FILTER
+                ========================================== -->
+                <div class="filter-group">
+                    <label for="sortFilter">
+                        Sort By
+                    </label>
+
+                    <select id="sortFilter">
+                        <option value="default">
+                            Default
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low → High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High → Low
+                        </option>
+
+                        <option value="name-a-z">
+                            Name: A → Z
+                        </option>
+
+                        <option value="name-z-a">
+                            Name: Z → A
+                        </option>
+                    </select>
+                </div>
+
+                <button
+                    id="clearFilters"
+                    type="button"
+                    class="clear-filters-btn">
+
+                    CLEAR FILTERS
+
+                </button>
+            </div>
+
+            <p id="resultsCount"></p>
+
             <p id="noResults"></p>
 
-            <div class="products" id="productsContainer"></div>
+            <div
+                class="products"
+                id="productsContainer">
+            </div>
         </section>
 
         <!-- ===== QUICK LINKS ===== -->
         <section class="quick-links">
             <div class="contact-link">
                 <div class="links-head"><h4>Contact details</h4></div>
+
                 <div class="address">
                     <h6 class="links-head">Address</h6>
                     <p>Isibaya Street 1515 <br><br>Soshanguve <br><br>0152 <br><br>Pretoria</p>
@@ -164,8 +299,11 @@
         <script src="../js/utils/helpers.js"></script>
         <script src="../js/components/product-card.js"></script>
         <script src="../js/store/cart-events.js"></script>
-        <script src="../js/store/wishlist-events.js"></script>
+        <script src="../js/store/wishlist.js"></script>
         <script src="../js/store/cart.js"></script>
+        <script src="../js/store/wishlist-events.js"></script>
         <script src="../js/pages/products.js"></script>
+        <script src="../js/pages/product-filters.js"></script>
+        <script src="../js/search.js"></script>
     </body>
 </html>

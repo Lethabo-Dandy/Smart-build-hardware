@@ -434,7 +434,7 @@ const PRODUCTS = [
         unit: "Sheet",
         costPrice: 499.99,
         price: 529.99,
-        stock: 6000,
+        stock: 0,
         reorderLevel: 2000,
         maxStock: 20000,
         featured: true,
@@ -596,7 +596,7 @@ const PRODUCTS = [
         costPrice: 115.00,
         price: 149.99,
 
-        stock: 450,
+        stock: 50,
         reorderLevel: 100,
         maxStock: 900,
 
@@ -1058,7 +1058,7 @@ const PRODUCTS = [
         costPrice: 39.00,
         price: 54.99,
 
-        stock: 200,
+        stock: 20,
 
         reorderLevel: 50,
         maxStock: 500,
@@ -1270,7 +1270,7 @@ const PRODUCTS = [
         costPrice: 120.00,
         price: 149.99,
 
-        stock: 12,
+        stock: 0,
 
         reorderLevel: 25,
         maxStock: 200,
