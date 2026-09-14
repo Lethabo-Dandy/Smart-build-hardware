@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Quote Management | Smart Build</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css">
+
+        <link
+        rel="stylesheet"
+        href="../css/components/buttons.css">    
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         QUOTE MANAGEMENT
+    ========================================================== -->
+
+    <main class="quote-management-page">
+
+
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
+
+        <section class="quote-management-header">
+
+            <div>
+
+                <h1>
+                    Quote Management
+                </h1>
+
+                <p>
+                    Manage customer quotation requests.
+                </p>
+
+            </div>
+
+
+            <div class="quote-management-stats">
+
+                <div class="quote-stat">
+
+                    <span
+                        id="totalQuotes">
+                        0
+                    </span>
+
+                    <small>
+                        Total Quotes
+                    </small>
+
+                </div>
+
+
+                <div class="quote-stat">
+
+                    <span
+                        id="pendingQuotes">
+                        0
+                    </span>
+
+                    <small>
+                        Pending
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FILTERS
+        ====================================================== -->
+
+        <section class="quote-management-toolbar">
+
+            <div class="quote-search">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    id="quoteSearch"
+                    placeholder="Search quotes...">
+
+            </div>
+
+
+            <select id="quoteStatusFilter">
+
+                <option value="all">
+                    All Statuses
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+                <option value="Reviewing">
+                    Reviewing
+                </option>
+
+                <option value="Quoted">
+                    Quoted
+                </option>
+
+                <option value="Accepted">
+                    Accepted
+                </option>
+
+                <option value="Declined">
+                    Declined
+                </option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             QUOTES
+        ====================================================== -->
+
+        <section
+            id="quoteManagementContainer"
+            class="quote-management-list">
+        </section>
+
+
+        <p
+            id="noQuotes"
+            class="no-quotes">
+            No quote requests found.
+        </p>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="../js/config.js"></script>
+
+    <script src="../js/data.js"></script>
+
+    <script src="../js/utils/helpers.js"></script>
+
+    <script src="../js/utils/modal.js"></script>
+
+    <script src="../js/pages/quote-management.js"></script>
+
+</body>
+
+</html>

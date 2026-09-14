@@ -52,30 +52,20 @@
     letter-spacing: .1rem;
 }
 
-.btn-details{
-
+.btn-details
+{
     width:80%;
-
     margin-top:12px;
-
     margin-bottom:20px;
-
     border:none;
-
     background:none;
-
     color:#414443;
-
     font-weight:bold;
-
     cursor:pointer;
-
     transition:.3s;
-
 }
 
-.btn-details:hover{
-
+.btn-details:hover
+{
     color:#cc5d0d;
-
 }

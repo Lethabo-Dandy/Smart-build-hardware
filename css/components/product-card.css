@@ -14,7 +14,6 @@
     padding-top: 5rem;
 }
 
-
 /* =========================================
    PRODUCTS GRID
 ========================================= */
@@ -42,7 +41,6 @@
     padding: 16px;
     border: 1px solid #ececec;
     box-shadow: 0 4px 10px rgba(0,0,0,.05);
-
     transition:
         transform .3s,
         box-shadow .3s,
@@ -140,7 +138,6 @@
     margin-left: 4px;
 }
 
-
 /* =========================================
    PRODUCT NAME
 ========================================= */
@@ -202,20 +199,14 @@
 /* =========================================
    ADD TO CART ANIMATION
 ========================================= */
-
 .cart-fly-image
 {
     position: fixed;
-
     width: 80px;
     height: 80px;
-
     object-fit: contain;
-
     pointer-events: none;
-
     z-index: 9999;
-
     transition:
         left .7s cubic-bezier(.4, 0, 1, 1),
         top .7s cubic-bezier(.4, 0, 1, 1),
@@ -236,103 +227,69 @@
 /* ==========================================
    PRODUCT FILTER BAR
 ========================================== */
-
 .product-filters
 {
     display: grid;
-
     grid-template-columns:
         repeat(4, minmax(180px, 1fr))
         minmax(160px, auto);
 
     align-items: end;
-
     gap: 18px;
-
     width: 100%;
-
     padding: 20px;
-
     margin: 25px 0;
-
     background: #f8f8f8;
-
     border: 1px solid #e5e5e5;
-
     border-radius: 10px;
-
     box-sizing: border-box;
 }
-
 
 /* ==========================================
    FILTER GROUP
 ========================================== */
-
 .filter-group
 {
     display: flex;
-
     flex-direction: column;
-
     gap: 7px;
-
     min-width: 0;
 }
-
 
 /* ==========================================
    FILTER LABEL
 ========================================== */
-
 .filter-group label
 {
     font-size: .82rem;
-
     font-weight: 600;
-
     color: #555;
-
     line-height: 1;
 }
-
 
 /* ==========================================
    SELECT FILTERS
 ========================================== */
-
 #categoryFilter,
 #subCategoryFilter,
 #stockFilter,
 #sortFilter
 {
     width: 100%;
-
     height: 42px;
-
     padding: 0 35px 0 12px;
-
     border: 1px solid #d4d4d4;
-
     border-radius: 7px;
-
     background: #fff;
-
     color: #333;
-
     font-size: .9rem;
-
     cursor: pointer;
-
     outline: none;
-
     box-sizing: border-box;
-
     transition:
         border-color .2s ease,
         box-shadow .2s ease;
 }
-
 
 #categoryFilter:focus,
 #subCategoryFilter:focus,
@@ -340,151 +297,107 @@
 #sortFilter:focus
 {
     border-color: var(--primary);
-
     box-shadow:
         0 0 0 2px
         rgba(0, 0, 0, .05);
 }
 
-
 /* ==========================================
    PRICE FILTER
 ========================================== */
-
 .price-filter
 {
     display: flex;
-
     flex-direction: column;
-
     gap: 7px;
 }
-
 
 .price-filter label
 {
     width: 100%;
 }
 
-
 .price-inputs
 {
     display: flex;
-
     align-items: center;
-
     gap: 8px;
 }
-
 
 .price-filter input
 {
     width: 100%;
-
     height: 42px;
-
     padding: 0 10px;
-
     border: 1px solid #d4d4d4;
-
     border-radius: 7px;
-
     background: #fff;
-
     font-size: .9rem;
-
     outline: none;
-
     box-sizing: border-box;
 }
-
 
 .price-filter input:focus
 {
     border-color: var(--primary);
-
     box-shadow:
         0 0 0 2px
         rgba(0, 0, 0, .05);
 }
 
-
 .price-filter span
 {
     color: #888;
-
     font-size: .85rem;
-
     flex-shrink: 0;
 }
-
 
 /* ==========================================
    CLEAR FILTERS BUTTON
 ========================================== */
-
 .clear-filters-btn
 {
     height: 42px;
-
     padding: 0 18px;
-
     border: 1px solid var(--primary);
-
     border-radius: 7px;
-
     background: var(--primary);
-
     color: #fff;
-
     font-size: .82rem;
-
     font-weight: 600;
-
     letter-spacing: .3px;
-
     white-space: nowrap;
-
     cursor: pointer;
-
     transition:
         background .2s ease,
         transform .2s ease,
         opacity .2s ease;
 }
 
-
 .clear-filters-btn:hover
 {
     opacity: .9;
 }
-
 
 .clear-filters-btn:active
 {
     transform: scale(.98);
 }
 
-
 /* ==========================================
    RESULTS COUNT
 ========================================== */
-
 #resultsCount
 {
     margin: 18px 0;
-
     color: #666;
-
     font-size: .9rem;
-
     font-weight: 500;
 }
 
 /* ==========================================
    FILTER BAR - TABLET
 ========================================== */
-
 @media (max-width: 1100px)
 {
     .product-filters
@@ -494,123 +407,85 @@
     }
 }
 
-
 /* ==========================================
    FILTER BAR - MOBILE
 ========================================== */
-
 @media (max-width: 700px)
 {
     .product-filters
     {
         grid-template-columns: 1fr;
-
         gap: 15px;
-
         padding: 16px;
     }
-
 
     .clear-filters-btn
     {
         width: 100%;
     }
-}/* ==========================================
+}
+
+/* ==========================================
    PRODUCT FILTER BAR
 ========================================== */
-
 .product-filters
 {
     display: flex;
-
     flex-wrap: wrap;
-
     align-items: flex-end;
-
     gap: 18px;
-
     width: 100%;
-
     padding: 20px;
-
     margin: 25px 0;
-
     background: #f8f8f8;
-
     border: 1px solid #e5e5e5;
-
     border-radius: 10px;
-
     box-sizing: border-box;
 }
-
 
 /* ==========================================
    FILTER GROUP
 ========================================== */
-
 .filter-group
 {
     display: flex;
-
     flex-direction: column;
-
     gap: 7px;
-
     flex: 1 1 180px;
-
     min-width: 180px;
 }
-
 
 /* ==========================================
    FILTER LABEL
 ========================================== */
-
 .filter-group label
 {
     font-size: .82rem;
-
     font-weight: 600;
-
     color: #555;
 }
-
 
 /* ==========================================
    SELECT FILTERS
 ========================================== */
-
 #categoryFilter,
 #subCategoryFilter,
 #stockFilter,
 #sortFilter
 {
     width: 100%;
-
     height: 42px;
-
     padding: 0 12px;
-
     border: 1px solid #d4d4d4;
-
     border-radius: 7px;
-
     background: #fff;
-
     color: #333;
-
     font-size: .9rem;
-
     cursor: pointer;
-
     outline: none;
-
     box-sizing: border-box;
-
     transition: .2s ease;
 }
-
 
 #categoryFilter:focus,
 #subCategoryFilter:focus,
@@ -620,144 +495,102 @@
     border-color: var(--primary);
 }
 
-
 /* ==========================================
    PRICE FILTER
 ========================================== */
-
 .price-filter
 {
     flex: 1 1 200px;
 }
 
-
 .price-inputs
 {
     display: flex;
-
     align-items: center;
-
     gap: 8px;
-
     width: 100%;
 }
-
 
 .price-filter input
 {
     width: 100%;
-
     height: 42px;
-
     padding: 0 10px;
-
     border: 1px solid #d4d4d4;
-
     border-radius: 7px;
-
     background: #fff;
-
     font-size: .9rem;
-
     outline: none;
-
     box-sizing: border-box;
 }
-
 
 .price-filter input:focus
 {
     border-color: var(--primary);
 }
 
-
 .price-inputs span
 {
     color: #777;
-
     flex-shrink: 0;
 }
-
 
 /* ==========================================
    CLEAR FILTERS
 ========================================== */
-
 .clear-filters-btn
 {
     height: 42px;
-
     padding: 0 18px;
-
     border: 1px solid var(--primary);
-
     border-radius: 7px;
-
     background: var(--primary);
-
     color: #fff;
-
     font-size: .82rem;
-
     font-weight: 600;
-
     white-space: nowrap;
-
     cursor: pointer;
-
     transition: .2s ease;
 }
-
 
 .clear-filters-btn:hover
 {
     opacity: .88;
 }
 
-
 .clear-filters-btn:active
 {
     transform: scale(.98);
 }
 
-
 /* ==========================================
    RESULTS COUNT
 ========================================== */
-
 #resultsCount
 {
     margin: 18px 0;
-
     color: #666;
-
     font-size: .9rem;
-
     font-weight: 500;
 }
 
 /* ==========================================
    PRODUCT FILTERS - TABLET
 ========================================== */
-
 @media (max-width: 1100px)
 {
     .product-filters
     {
         display: grid;
-
         grid-template-columns:
             repeat(3, 1fr);
-
         gap: 15px;
     }
-
 
     .filter-group
     {
         width: 100%;
     }
-
 
     .price-filter
     {
@@ -765,34 +598,25 @@
     }
 }
 
-
 /* ==========================================
    PRODUCT FILTERS - MOBILE
 ========================================== */
-
 @media (max-width: 700px)
 {
     .product-filters
     {
         display: grid;
-
         grid-template-columns: 1fr;
-
         gap: 14px;
-
         padding: 16px;
-
         margin: 20px 0;
     }
-
 
     .filter-group
     {
         width: 100%;
-
         min-width: 0;
     }
-
 
     #categoryFilter,
     #subCategoryFilter,
@@ -802,24 +626,20 @@
         width: 100%;
     }
 
-
     .price-filter
     {
         width: 100%;
     }
-
 
     .price-inputs
     {
         width: 100%;
     }
 
-
     .clear-filters-btn
     {
         width: 100%;
     }
-
 
     #resultsCount
     {

@@ -17,14 +17,16 @@
 }
 
 .btn-cart.disabled,
-.btn-cart:disabled{
+.btn-cart:disabled
+{
     background:#9e9e9e;
     cursor:not-allowed;
     pointer-events:none;
 }
 
 .btn-cart.disabled:hover,
-.btn-cart:disabled:hover{
+.btn-cart:disabled:hover
+{
     background:#9e9e9e;
     transform:none;
 }
@@ -79,76 +81,53 @@
 /* ==========================================
    STOCK WARNING MODAL
 ========================================== */
-
 .stock-warning-overlay
 {
     position: fixed;
-
     inset: 0;
-
     display: none;
-
     align-items: center;
-
     justify-content: center;
-
     padding: 20px;
-
     background: rgba(0, 0, 0, .55);
-
     z-index: 9999;
 }
-
 
 /* ==========================================
    SHOW MODAL
 ========================================== */
-
 .stock-warning-overlay.active
 {
     display: flex;
 }
 
-
 /* ==========================================
    MODAL BOX
 ========================================== */
-
 .stock-warning-modal
 {
     position: relative;
-
     width: 100%;
-
     max-width: 420px;
-
     padding: 35px 30px 30px;
-
     background: #fff;
-
     border-radius: 12px;
-
     text-align: center;
-
     box-shadow:
         0 15px 40px
         rgba(0, 0, 0, .25);
 
-    animation:
-        stockModalIn .2s ease;
+    animation: stockModalIn .2s ease;
 }
-
 
 /* ==========================================
    MODAL ANIMATION
 ========================================== */
-
 @keyframes stockModalIn
 {
     from
     {
         opacity: 0;
-
         transform:
             translateY(-15px)
             scale(.96);
@@ -157,154 +136,104 @@
     to
     {
         opacity: 1;
-
         transform:
             translateY(0)
             scale(1);
     }
 }
 
-
 /* ==========================================
    CLOSE BUTTON
 ========================================== */
-
 .stock-warning-close
 {
     position: absolute;
-
     top: 12px;
-
     right: 12px;
-
     width: 32px;
-
     height: 32px;
-
     border: none;
-
     background: transparent;
-
     color: #888;
-
     font-size: .9rem;
-
     cursor: pointer;
-
     border-radius: 50%;
 }
-
 
 .stock-warning-close:hover
 {
     background: #f2f2f2;
-
     color: #333;
 }
-
 
 /* ==========================================
    WARNING ICON
 ========================================== */
-
 .stock-warning-icon
 {
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     width: 60px;
-
     height: 60px;
-
     margin: 0 auto 18px;
-
     border-radius: 50%;
-
     background: #fff3cd;
-
     color: #d39e00;
-
     font-size: 1.6rem;
 }
-
 
 /* ==========================================
    MODAL TITLE
 ========================================== */
-
 .stock-warning-modal h2
 {
     margin: 0 0 10px;
-
     font-size: 1.35rem;
-
     color: #333;
 }
-
 
 /* ==========================================
    MODAL MESSAGE
 ========================================== */
-
 .stock-warning-modal p
 {
     margin: 0 0 25px;
-
     color: #666;
-
     font-size: .95rem;
-
     line-height: 1.5;
 }
-
 
 /* ==========================================
    OK BUTTON
 ========================================== */
-
 .stock-warning-ok
 {
     width: 100%;
-
     height: 42px;
-
     border: none;
-
     border-radius: 7px;
-
     background: var(--primary);
-
     color: #fff;
-
     font-size: .9rem;
-
     font-weight: 600;
-
     cursor: pointer;
-
     transition: .2s ease;
 }
-
 
 .stock-warning-ok:hover
 {
     opacity: .88;
 }
 
-
 /* ==========================================
    MOBILE MODAL
 ========================================== */
-
 @media (max-width: 500px)
 {
     .stock-warning-modal
     {
         max-width: 100%;
-
         padding: 30px 22px 22px;
     }
 }

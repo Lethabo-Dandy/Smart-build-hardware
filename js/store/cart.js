@@ -263,19 +263,25 @@ function setQuantity(productId, quantity)
     /* ==========================================
        EXCEEDS STOCK
     ========================================== */
-
     if(quantity > product.stock)
     {
-        showStockWarning(
-            `Only ${product.stock} ${product.unit}(s) available in stock.`
+        showModal(
+            "Stock Limit Reached",
+            `Only ${product.stock} ${product.unit}(s) are currently available.`,
+            {
+                type: "warning",
+                confirmText: "Okay",
+                cancelText: "Close"
+            }
         );
 
         item.quantity = product.stock;
-    }
-    else
-    {
-        item.quantity = quantity;
-    }
+        
+        }
+        else
+        {
+            item.quantity = quantity;
+        }
 
 
     saveCart();

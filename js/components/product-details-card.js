@@ -1,7 +1,6 @@
 /* ==========================================
    CREATE PRODUCT DETAILS
 ========================================== */
-
 function createProductDetails(product)
 {
     const image =
@@ -12,25 +11,19 @@ function createProductDetails(product)
                 product.image
             );
 
-
     /* ==========================================
        WISHLIST STATE
     ========================================== */
-
     const wishlistActive =
         typeof isInWishlist === "function" &&
         isInWishlist(product.id);
 
-
     return `
-
         <section class="details-container">
-
 
             <!-- ==========================================
                  PRODUCT IMAGE
             ========================================== -->
-
             <div class="details-image">
 
                 <img
@@ -39,25 +32,18 @@ function createProductDetails(product)
 
             </div>
 
-
             <!-- ==========================================
                  PRODUCT INFORMATION
             ========================================== -->
-
             <div class="details-info">
-
-
                 <h1>
                     ${product.name}
                 </h1>
 
-
                 <!-- ==========================================
                      RATING
                 ========================================== -->
-
                 <div class="rating">
-
                     ${"★".repeat(product.rating)}
 
                     ${"☆".repeat(5 - product.rating)}
@@ -65,45 +51,34 @@ function createProductDetails(product)
                     <span>
                         (${product.reviews})
                     </span>
-
                 </div>
-
 
                 <!-- ==========================================
                      PRICE
                 ========================================== -->
-
                 <p class="price">
-
                     R${product.price.toFixed(2)}
 
                     <span>
                         / ${product.unit}
                     </span>
-
                 </p>
-
 
                 <!-- ==========================================
                      DESCRIPTION
                 ========================================== -->
-
                 <p>
                     ${product.description}
                 </p>
 
-
                 <!-- ==========================================
                      ACTIONS
                 ========================================== -->
-
                 <div class="details-actions">
-
 
                     <!-- ==========================================
                          WISHLIST
                     ========================================== -->
-
                     <button
                         class="details-wishlist-btn ${
                             wishlistActive
@@ -123,9 +98,7 @@ function createProductDetails(product)
                                 ? "bi-heart-fill"
                                 : "bi-heart"
                         }"></i>
-
                     </button>
-
 
                     <!-- ==========================================
                          ADD TO CART
@@ -138,15 +111,9 @@ function createProductDetails(product)
                         <i class="bi bi-cart4"></i>
 
                         ADD TO CART
-
                     </button>
-
-
                 </div>
-
             </div>
-
         </section>
-
     `;
 }

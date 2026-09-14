@@ -47,8 +47,7 @@ function displayCart()
 {
     if(!cartItems) return;
 
-    const currentCart =
-        getCart();
+    const currentCart = getCart();
 
     /*
         EMPTY CART
@@ -176,7 +175,6 @@ function createCartItem(item)
                         data-id="${product.id}">
 
                         +
-
                     </button>
                 </div>
 
@@ -195,63 +193,42 @@ function createCartItem(item)
 /* ==========================================
    SHOW STOCK WARNING
 ========================================== */
-
-function showStockWarning(
-    message
-)
+function showStockWarning(message)
 {
     const modal =
-        document.getElementById(
-            "stockWarningModal"
-        );
+        document.getElementById("stockWarningModal");
 
     const messageElement =
-        document.getElementById(
-            "stockWarningMessage"
-        );
+        document.getElementById("stockWarningMessage");
 
     if(!modal)
     {
         return;
     }
 
-
     if(messageElement)
     {
-        messageElement.textContent =
-            message;
+        messageElement.textContent = message;
     }
 
-
-    modal.classList.add(
-        "active"
-    );
+    modal.classList.add("active");
 }
 
 /* ==========================================
    CLOSE STOCK WARNING
 ========================================== */
-
 const stockWarningModal =
-    document.getElementById(
-        "stockWarningModal"
-    );
+    document.getElementById("stockWarningModal");
 
 const closeStockWarning =
-    document.getElementById(
-        "closeStockWarning"
-    );
+    document.getElementById("closeStockWarning");
 
 const stockWarningOk =
-    document.getElementById(
-        "stockWarningOk"
-    );
-
+    document.getElementById("stockWarningOk");
 
 /* ==========================================
    CLOSE MODAL FUNCTION
 ========================================== */
-
 function closeStockWarningModal()
 {
     if(stockWarningModal)
@@ -262,11 +239,9 @@ function closeStockWarningModal()
     }
 }
 
-
 /* ==========================================
    CLOSE BUTTON
 ========================================== */
-
 if(closeStockWarning)
 {
     closeStockWarning.addEventListener(
@@ -275,11 +250,9 @@ if(closeStockWarning)
     );
 }
 
-
 /* ==========================================
    OK BUTTON
 ========================================== */
-
 if(stockWarningOk)
 {
     stockWarningOk.addEventListener(
@@ -288,21 +261,17 @@ if(stockWarningOk)
     );
 }
 
-
 /* ==========================================
    CLOSE WHEN CLICKING OUTSIDE
 ========================================== */
-
 if(stockWarningModal)
 {
-    stockWarningModal.addEventListener(
+    stockWarningModal.addEventListener
+    (
         "click",
         function(event)
         {
-            if(
-                event.target ===
-                stockWarningModal
-            )
+            if(event.target === stockWarningModal)
             {
                 closeStockWarningModal();
             }
@@ -315,11 +284,8 @@ if(stockWarningModal)
 ========================================== */
 function attachCartPageEvents()
 {
-    /*
-        INCREASE
-    */
-    document
-        .querySelectorAll(".increase-btn")
+    /*INCREASE*/
+    document.querySelectorAll(".increase-btn")
         .forEach(button =>
         {
             button.onclick = () =>
@@ -333,11 +299,8 @@ function attachCartPageEvents()
             };
         });
 
-    /*
-        DECREASE
-    */
-    document
-        .querySelectorAll(".decrease-btn")
+    /* DECREASE */
+    document.querySelectorAll(".decrease-btn")
         .forEach(button =>
         {
             button.onclick = () =>
@@ -351,17 +314,13 @@ function attachCartPageEvents()
             };
         });
 
-       /* ==========================================
-        DIRECT QUANTITY INPUT
+        /* ==========================================
+            DIRECT QUANTITY INPUT
         ========================================== */
-
-        document
-            .querySelectorAll(".quantity-input")
+        document.querySelectorAll(".quantity-input")
             .forEach(input =>
             {
-                input.addEventListener(
-                    "keydown",
-                    event =>
+                input.addEventListener("keydown", event =>
                     {
                         if(event.key !== "Enter")
                         {
@@ -370,62 +329,41 @@ function attachCartPageEvents()
 
                         event.preventDefault();
 
-
                         const id =
                             Number(input.dataset.id);
 
-
                         const quantity =
                             Number(input.value);
-
 
                         /* ==========================================
                         SET QUANTITY
                         ========================================== */
-
-                        setQuantity(
-                            id,
-                            quantity
-                        );
-
+                        setQuantity(id, quantity);
 
                         /* ==========================================
                         REFRESH CART
                         ========================================== */
-
                         displayCart();
                     }
                 );
 
-
-                input.addEventListener(
-                    "change",
-                    () =>
+                input.addEventListener("change", () =>
                     {
                         const id =
                             Number(input.dataset.id);
 
-
                         const quantity =
                             Number(input.value);
 
-
-                        setQuantity(
-                            id,
-                            quantity
-                        );
-
+                        setQuantity(id, quantity);
 
                         displayCart();
                     }
                 );
             });
         
-    /*
-        REMOVE
-    */
-    document
-        .querySelectorAll(".remove-cart-item")
+    /*    REMOVE    */
+    document.querySelectorAll(".remove-cart-item")
         .forEach(button =>
         {
             button.onclick = () =>
@@ -452,8 +390,8 @@ function updateCartSummary()
 
     currentCart.forEach(item =>
     {
-        const product =
-            PRODUCTS.find(
+        const product = PRODUCTS.find
+            (
                 product => product.id === item.id
             );
 
@@ -464,51 +402,37 @@ function updateCartSummary()
             item.quantity;
     });
 
-    /*
-        SUBTOTAL
-    */
+    /*    SUBTOTAL    */
     if(cartSubtotal)
     {
         cartSubtotal.textContent =
             `R${subtotal.toFixed(2)}`;
     }
 
-    /*
-        DELIVERY
-    */
+    /*    DELIVERY    */
     if(cartDelivery)
     {
-        if(
-            typeof STORE !== "undefined" &&
-            subtotal >= STORE.freeDelivery
-        )
+        if(typeof STORE !== "undefined" && subtotal >= STORE.freeDelivery)
         {
-            cartDelivery.textContent =
-                "FREE";
+            cartDelivery.textContent = "FREE";
         }
         else
         {
-            cartDelivery.textContent =
-                "Calculated at checkout";
+            cartDelivery.textContent = "Calculated at checkout";
         }
     }
 
-    /*
-        TOTAL
-    */
+    /*    TOTAL    */
     if(cartTotal)
     {
-        cartTotal.textContent =
-            `R${subtotal.toFixed(2)}`;
+        cartTotal.textContent = `R${subtotal.toFixed(2)}`;
     }
 }
 
 /* ==========================================
    INITIALIZE
 ========================================== */
-document.addEventListener(
-    "DOMContentLoaded",
-    () =>
+document.addEventListener("DOMContentLoaded", () =>
     {
         displayCart();
 
@@ -535,9 +459,7 @@ function attachClearCartEvent()
             return;
         }
 
-        showModal(
-            "Clear Cart?",
-            "Are you sure you want to remove all products from your cart?",
+        showModal("Clear Cart?", "Are you sure you want to remove all products from your cart?",
             {
                 type: "danger",
                 confirmText: "Clear Cart",
@@ -562,15 +484,11 @@ const checkoutBtn =
 
 if(checkoutBtn)
 {
-    checkoutBtn.addEventListener(
-        "click",
-        () =>
+    checkoutBtn.addEventListener("click", () =>
         {
             if(getCart().length === 0)
             {
-                showModal(
-                    "Cart is Empty",
-                    "Please add at least one product to your cart before proceeding to checkout.",
+                showModal("Cart is Empty", "Please add at least one product to your cart before proceeding to checkout.",
                     {
                         type: "warning",
                         confirmText: "Okay",
@@ -581,8 +499,7 @@ if(checkoutBtn)
                 return;
             }
 
-            window.location.href =
-                "../checkout.html";
+            window.location.href = "../checkout.html";
         }
     );
 }

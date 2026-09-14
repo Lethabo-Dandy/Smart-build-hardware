@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+        <title>Get a Quote | Smart Build</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            crossorigin="anonymous">
+
+        <link
+            rel="stylesheet"
+            href="../css/main.css">
+
+    </head>
+
+
+    <body>
+
+
+        <!-- =========================================================
+            NAVBAR
+        ========================================================== -->
+
+        <nav class="navbar">
+
+            <input
+                type="checkbox"
+                id="nav-toggle">
+
+
+            <div class="logo">
+
+                <a href="../index.html">
+
+                    <img
+                        src="../img/logo.png"
+                        alt="Smart Build">
+
+                </a>
+
+            </div>
+
+
+            <!-- =========================================================
+                HAMBURGER
+            ========================================================== -->
+
+            <label
+                for="nav-toggle"
+                class="hamburger-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </label>
+
+
+            <!-- =========================================================
+                NAV MENU
+            ========================================================== -->
+
+            <div class="nav-menu">
+
+                <ul class="mid-links-list">
+
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- =========================================================
+                    SEARCH + ICONS
+                ========================================================== -->
+
+                <div class="nav-right">
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search products..."
+                            autocomplete="off">
+
+                        <button
+                            id="searchBtn"
+                            type="button">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+                        <div id="suggestions"></div>
+
+                    </div>
+
+
+                    <ul class="icon-links">
+
+                        <li>
+
+                            <a href="wishlist.html">
+
+                                <i class="bi bi-heart-fill"></i>
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="cart.html"
+                                class="cart-icon">
+
+                                <i class="bi bi-cart4"></i>
+
+                                <span
+                                    id="cartCount"
+                                    class="cart-count">
+                                    0
+                                </span>
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="my-orders.html">
+
+                                <i class="bi bi-person-circle"></i>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- =========================================================
+            GET A QUOTE
+        ========================================================== -->
+
+        <main class="quote-page">
+
+
+            <!-- =========================================================
+                PAGE HEADER
+            ========================================================== -->
+
+            <section class="quote-header">
+
+                <h1>
+                    Get a <span class="highlight">Quote</span>
+                </h1>
+
+                <p>
+                    Tell us what you need and our team will
+                    prepare a quotation for you.
+                </p>
+
+            </section>
+
+
+
+            <!-- =========================================================
+                QUOTE FORM
+            ========================================================== -->
+
+            <section class="quote-section">
+
+                <form
+                    id="quoteForm"
+                    class="quote-form">
+
+
+                    <!-- =================================================
+                        CUSTOMER INFORMATION
+                    ================================================== -->
+
+                    <div class="quote-form-section">
+
+                        <h2>
+                            Customer Information
+                        </h2>
+
+
+                        <div class="quote-form-grid">
+
+                            <div class="quote-field">
+
+                                <label for="quoteName">
+                                    Full Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="quoteName"
+                                    name="name"
+                                    required
+                                    placeholder="Enter your full name">
+
+                            </div>
+
+
+                            <div class="quote-field">
+
+                                <label for="quoteCompany">
+                                    Company Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="quoteCompany"
+                                    name="company"
+                                    placeholder="Company name (optional)">
+
+                            </div>
+
+
+                            <div class="quote-field">
+
+                                <label for="quotePhone">
+                                    Phone Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="quotePhone"
+                                    name="phone"
+                                    required
+                                    placeholder="e.g. 079 123 4567">
+
+                            </div>
+
+
+                            <div class="quote-field">
+
+                                <label for="quoteEmail">
+                                    Email Address *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="quoteEmail"
+                                    name="email"
+                                    required
+                                    placeholder="you@example.com">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                        PROJECT INFORMATION
+                    ================================================== -->
+
+                    <div class="quote-form-section">
+
+                        <h2>
+                            Project Information
+                        </h2>
+
+
+                        <div class="quote-form-grid">
+
+                            <div class="quote-field">
+
+                                <label for="quoteProject">
+                                    Project Type *
+                                </label>
+
+                                <select
+                                    id="quoteProject"
+                                    name="project"
+                                    required>
+
+                                    <option value="">
+                                        Select project type
+                                    </option>
+
+                                    <option value="residential">
+                                        Residential
+                                    </option>
+
+                                    <option value="commercial">
+                                        Commercial
+                                    </option>
+
+                                    <option value="renovation">
+                                        Renovation
+                                    </option>
+
+                                    <option value="construction">
+                                        Construction
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="quote-field">
+
+                                <label for="quoteDelivery">
+                                    Delivery Required? *
+                                </label>
+
+                                <select
+                                    id="quoteDelivery"
+                                    name="delivery"
+                                    required>
+
+                                    <option value="">
+                                        Select option
+                                    </option>
+
+                                    <option value="yes">
+                                        Yes
+                                    </option>
+
+                                    <option value="no">
+                                        No
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="quote-field quote-field-full">
+
+                                <label for="quoteLocation">
+                                    Project / Delivery Location *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="quoteLocation"
+                                    name="location"
+                                    placeholder="Enter suburb, town or site location">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- =================================================
+                    MATERIAL REQUIREMENTS
+                ================================================== -->
+
+                <div class="quote-form-section">
+
+                    <h2>
+                        Material Requirements
+                    </h2>
+
+                    <div class="quote-field">
+
+                        <label for="quoteMaterials">
+                            Materials Required *
+                        </label>
+
+                        <textarea
+                            id="quoteMaterials"
+                            name="materials"
+                            rows="6"
+                            required
+                            placeholder="Example:
+500 bricks
+10 bags cement
+2 loads sand
+Roof sheets
+Steel nails"></textarea>
+
+    </div>
+
+    <div class="quote-field">
+
+        <label for="quoteDetails">
+            Additional Details
+        </label>
+
+        <textarea
+            id="quoteDetails"
+            name="details"
+            rows="5"
+            placeholder="Add measurements, specifications, preferred brands, deadlines or any other information that will help us prepare your quote."></textarea>
+
+    </div>
+
+</div>
+
+<!-- =================================================
+     SUBMIT
+================================================== -->
+
+                    <!-- =================================================
+                        SUBMIT
+                    ================================================== -->
+                    <div class="quote-submit">
+                        <button
+                            type="submit"
+                            class="btn-quote-submit">
+
+                            <i class="bi bi-send"></i>
+
+                            REQUEST QUOTE
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- =========================================================
+            FOOTER
+        ========================================================== -->
+        <footer>
+            <p>
+                <i class="fa-solid fa-copyright"></i>
+
+                2026 Copyright, Smart Build
+            </p>
+        </footer>
+
+        <!-- =========================================================
+            JAVASCRIPT
+        ========================================================== -->
+        <script src="../js/config.js"></script>
+        <script src="../js/data.js"></script>
+        <script src="../js/utils/currency.js"></script>
+        <script src="../js/utils/helpers.js"></script>
+        <script src="../js/store/cart.js"></script>
+        <script src="../js/store/wishlist.js"></script>
+        <script src="../js/store/wishlist-events.js"></script>
+        <script src="../js/search.js"></script>
+        <script src="../js/utils/modal.js"></script>
+        <script src="../js/pages/get-quote.js"></script>
+    </body>
+</html>
